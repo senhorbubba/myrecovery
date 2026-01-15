@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-
     <script>
-    // Only run this on the main home page to avoid infinite loops
     if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
         const userLang = navigator.language || navigator.userLanguage; 
-        
-        // Detect Portuguese (pt, pt-BR, pt-PT)
-        if (userLang.startsWith('pt')) {
-            window.location.href = '/pt/index.html';
-        } 
-        // Detect Polish (pl)
-        else if (userLang.startsWith('pl')) {
-            window.location.href = '/pl/index.html';
-        }
+        if (userLang.startsWith('pt')) { window.location.href = '/pt/index.html'; } 
+        else if (userLang.startsWith('pl')) { window.location.href = '/pl/index.html'; }
     }
     </script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Timeline | My ACL Recovery</title>
@@ -30,12 +20,11 @@
 </head>
 <body class="bg-white text-gray-800 antialiased font-['Inter']">
 
-   <nav class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
+<nav class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
     <div class="max-w-5xl mx-auto px-5 py-4 flex justify-between items-center">
         <a href="index.html" class="text-xl font-bold tracking-tight text-gray-900">
             Knee<span class="google-blue">Recovery</span>
         </a>
-         
         <div class="flex items-center">
             <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-500 mr-8">
                 <a href="index.html" class="google-blue">Timeline</a>
@@ -43,25 +32,18 @@
                 <a href="tips.html" class="hover:text-blue-600 transition-colors">Tips</a>
                 <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
             </div>
-
             <div class="flex items-center space-x-4 border-l pl-4 border-gray-200">
-                <div class="relative inline-block text-left">
-                    <select onchange="location = this.value;" class="bg-transparent text-sm font-semibold text-gray-500 hover:text-google-blue focus:outline-none cursor-pointer">
-                        <option value="/index.html">EN</option>
-                        <option value="/pt/index.html">PT</option>
-                        <option value="/pl/index.html">PL</option>
-                    </select>
-                </div>
-
-                <button id="menu-btn" class="md:hidden text-gray-500 focus:outline-none" aria-label="Toggle menu">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                    </svg>
+                <select onchange="location = this.value;" class="bg-transparent text-sm font-semibold text-gray-500 hover:text-google-blue focus:outline-none cursor-pointer">
+                    <option value="/index.html">EN</option>
+                    <option value="/pt/index.html">PT</option>
+                    <option value="/pl/index.html">PL</option>
+                </select>
+                <button id="menu-btn" class="md:hidden text-gray-500 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
                 </button>
             </div>
         </div>
     </div>
-
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-5 py-6 space-y-4 shadow-xl">
         <a href="index.html" class="block text-lg font-bold google-blue">Timeline</a>
         <a href="exercises.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Exercises</a>
@@ -70,9 +52,8 @@
     </div>
 </nav>
 
-    <section class="relative bg-white pt-8 pb-12 lg:pt-20 lg:pb-32 overflow-hidden">
+<section class="relative bg-white pt-8 pb-12 lg:pt-20 lg:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row items-center gap-12">
-        
         <div class="w-full lg:w-1/2 text-center lg:text-left">
             <h1 class="text-4xl md:text-6xl font-black text-gray-900 tracking-tight leading-tight">
                 <span class="block">Day by day.</span>
@@ -80,213 +61,87 @@
                 <span class="block text-google-blue">Back to strength.</span>
             </h1>
             <p class="mt-6 text-lg text-gray-500 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                A real recovery, documented from the operating table forward. Follow the latest update to see where the journey stands today, or explore the full timeline to track progress, exercises, and key milestones — honestly, without shortcuts.
-            </p>
-            <p class="mt-4 text-lg font-medium text-gray-900 max-w-lg mx-auto lg:mx-0">
-                This is not a comeback story. It’s the work behind one.
+                A real recovery, documented from the operating table forward.
             </p>
             <div class="mt-10">
-                <a href="#timeline" class="inline-block w-full sm:w-auto px-10 py-4 bg-google-blue text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition-all">
-                    Start reading
-                </a>
+                <a href="#timeline" class="inline-block w-full sm:w-auto px-10 py-4 bg-google-blue text-white font-bold rounded-xl shadow-lg">Start reading</a>
             </div>
         </div>
-
         <div class="w-full lg:w-1/2">
             <div class="aspect-[4/3] w-full bg-gray-100 rounded-3xl overflow-hidden shadow-2xl">
-                <img class="w-full h-full object-cover object-top rounded-3xl" 
-                     src="images/MainStart.jpg" 
-                     alt="Exercising knee">
+                <img class="w-full h-full object-cover object-top" src="images/MainStart.jpg" alt="Exercising knee">
             </div>
         </div>
     </div>
 </section>
 
-    <main id="timeline" class="max-w-4xl mx-auto px-5 py-16 border-t border-gray-100">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-black text-gray-900">The Recovery Timeline</h2>
-            <p class="mt-2 text-gray-500 text-lg">Recent updates and milestones.</p>
-        </div>
-        
-        <div id="timeline-container" class="space-y-10">
-            <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden hover:bg-white hover:shadow-xl transition-all duration-300">
-                <div class="p-6 md:p-10 flex-1">
-                    <div class="flex flex-wrap items-center gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
-                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Week 3</span>
-                        <time class="text-gray-400">Dec 3, 2025</time>
-                        <span class="text-gray-400 mx-1">•</span>
-                        <span class="text-gray-600">Pain: 4/10</span>
-                        <span class="text-gray-400 mx-1">•</span>
-                        <span class="text-gray-600">Swelling: 4/10</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Day 19: Mobility Takes the Lead</h3>
-                    <p class="text-gray-600 leading-relaxed mb-6">A solid, productive day focused on mobility. Extension is largely there, but flexion remains the main challenge. Better sleep positions are helping recovery.</p>
-                    <a href="posts/day-19.html" class="inline-flex items-center font-bold google-blue hover:underline">Read full entry &rarr;</a>
-                </div>
-                <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
-                    <img src="images/Day19.jpg" class="w-full h-full object-cover" alt="Day 19 Progress">
-                </div>
-            </article>
-
-            <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden hover:bg-white hover:shadow-xl transition-all duration-300">
-                <div class="p-6 md:p-10 flex-1">
-                    <div class="flex flex-wrap items-center gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
-                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Week 3</span>
-                        <time class="text-gray-400">Dec 2, 2025</time>
-                        <span class="text-gray-400 mx-1">•</span>
-                        <span class="text-gray-600">Pain: 5/10</span>
-                        <span class="text-gray-400 mx-1">•</span>
-                        <span class="text-gray-600">Swelling: 4/10</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Day 18: When the Nerves Speak</h3>
-                    <p class="text-gray-600 leading-relaxed mb-6">Improvement continued, but nerve sensitivity made its presence felt. A sharp reminder that healing isn’t just muscular or mechanical - the nervous system needs retraining too, and patience becomes part of the therapy.</p>
-                    <a href="posts/day-18.html" class="inline-flex items-center font-bold google-blue hover:underline">Read full entry &rarr;</a>
-                </div>
-                <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
-                    <img src="images/Day18.jpg" class="w-full h-full object-cover" alt="Day 18 Progress">
-                </div>
-            </article>
-
-            <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden hover:bg-white hover:shadow-xl transition-all duration-300">
-                <div class="p-6 md:p-10 flex-1">
-                    <div class="flex flex-wrap items-center gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
-                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Week 3</span>
-                        <time class="text-gray-400">Dec 1, 2025</time>
-                        <span class="text-gray-400 mx-1">•</span>
-                        <span class="text-gray-600">Pain: 2/10</span>
-                        <span class="text-gray-400 mx-1">•</span>
-                        <span class="text-gray-600">Swelling: 4/10</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Day 17: Clarity and Confidence</h3>
-                    <p class="text-gray-600 leading-relaxed mb-6">Health stabilized, confidence returned, and clarity replaced fear. Strong physio sessions, reassuring medical feedback, and a clear plan for weight-bearing and travel marked a major psychological and physical turning point.</p>
-                    <a href="posts/day-17.html" class="inline-flex items-center font-bold google-blue hover:underline">Read full entry &rarr;</a>
-                </div>
-                <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
-                    <img src="images/Day17.jpg" class="w-full h-full object-cover" alt="Day 17 Progress">
-                </div>
-            </article>
-
-            <div id="older-entries" class="hidden space-y-10">
-                <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden">
-                    <div class="p-6 md:p-10 flex-1">
-                        <div class="text-xs font-bold mb-3 uppercase tracking-wider text-gray-400">Nov 30, 2025 • Pain 4/10</div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Day 16: A Scare and Reassurance</h3>
-                        <p class="text-gray-600 mb-6">Fatigue, irritation, and a fever triggered a scare, shifting the focus from recovery to health monitoring. New recovery equipment proved its value, medical reassurance helped calm the mind, and rest became the priority again.</p>
-                        <a href="posts/day-16.html" class="font-bold google-blue">Read full entry</a>
-                    </div>
-                    <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden"><img src="images/Day16.jpg" class="w-full h-full object-cover"></div>
-                </article>
-
-                <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden">
-                    <div class="p-6 md:p-10 flex-1">
-                        <div class="text-xs font-bold mb-3 uppercase tracking-wider text-gray-400">Nov 29, 2025 • Pain 3/10</div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Day 15: Taking Control</h3>
-                        <p class="text-gray-600 mb-6">Medication ended, responsibility shifted fully to discipline and routine. New recovery tools entered the picture, mobility improved, and confidence grew through clearer movement, better extension, and structured physiotherapy.</p>
-                        <a href="posts/day-15.html" class="font-bold google-blue">Read full entry</a>
-                    </div>
-                    <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden"><img src="images/Day15.jpg" class="w-full h-full object-cover"></div>
-                </article>
-
-                <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden">
-                    <div class="p-6 md:p-10 flex-1">
-                        <div class="text-xs font-bold mb-3 uppercase tracking-wider text-gray-400">Nov 16, 2025 • Surgery</div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Day 0: Surgery</h3>
-                        <p class="text-gray-600 mb-6">Surgery day was a blur of nerves, anesthesia, and loss of control. The procedure went well, but the real challenge started immediately after — numb legs, confusion, pain, and the first hard lessons of a. Leaving the hospital after midnight, exhausted and fragile, marked the true beginning of the comeback.</p>
-                        <a href="posts/day-0.html" class="font-bold google-blue">Read full entry</a>
-                    </div>
-                    <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden"><img src="images/Day0.jpg" class="w-full h-full object-cover"></div>
-                </article>
-
-                <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden">
-                    <div class="p-6 md:p-10 flex-1">
-                        <div class="text-xs font-bold mb-3 uppercase tracking-wider text-gray-400">Nov 15, 2025 • Pre-Op</div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Day-1: Waiting, Trusting, Letting Go</h3>
-                        <p class="text-gray-600 mb-6">The day before surgery was a mix of family chaos, forced calm, and hard decisions. After reviewing the MRI, the doctor confirmed a complex bucket-handle meniscus tear and raised concerns about an old ACL injury. Surgery was scheduled for the next morning, with permission given to fix everything if needed — accepting a longer recovery in exchange for doing it right.</p>
-                        <a href="posts/day-m1.html" class="font-bold google-blue">Read full entry</a>
-                    </div>
-                    <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden"><img src="images/DayM1.jpg" class="w-full h-full object-cover"></div>
-                </article>
-
-                <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden">
-                    <div class="p-6 md:p-10 flex-1">
-                        <div class="text-xs font-bold mb-3 uppercase tracking-wider text-gray-400">Nov 14, 2025 • Pre-Op</div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Day-2: Emergency Room</h3>
-                        <p class="text-gray-600 mb-6">A long day in the ER: pain, waiting, uncertainty, and small moments of relief. Seeing others reminded me to be grateful, and having family close made all the difference.</p>
-                        <a href="posts/day-m2.html" class="font-bold google-blue">Read full entry</a>
-                    </div>
-                    <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden"><img src="images/DayM2.jpg" class="w-full h-full object-cover"></div>
-                </article>
-            </div>
-        </div>
-
-        <div class="mt-16 text-center">
-            <button id="load-more-btn" class="w-full py-5 border-2 border-gray-100 rounded-2xl text-gray-600 font-bold hover:bg-gray-50 transition-all">
-                Load older entries
-            </button>
-        </div>
-    </main>
-
-    <footer class="py-12 text-center border-t border-gray-100">
-        <p class="text-sm text-gray-400 px-5">&copy; 2025 My Recovery Journey. Not medical advice.</p>
-    </footer>
-
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function() {
-    // Current Path Logic
-    const path = window.location.pathname;
-    const select = document.querySelector('select');
+<main id="timeline" class="max-w-4xl mx-auto px-5 py-16 border-t border-gray-100">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl font-black text-gray-900">The Recovery Timeline</h2>
+        <p class="mt-2 text-gray-500 text-lg">Recent updates and milestones.</p>
+    </div>
     
-    if (path.includes('/pt/')) {
-        select.value = "/pt/index.html";
-    } else if (path.includes('/pl/')) {
-        select.value = "/pl/index.html";
-    } else {
-        select.value = "/index.html";
+    <div id="timeline-container" class="space-y-10">
+        </div>
+
+    <div class="mt-16 text-center">
+        <button id="load-more-btn" class="w-full py-5 border-2 border-gray-100 rounded-2xl text-gray-600 font-bold hover:bg-gray-50 transition-all">
+            Load older entries
+        </button>
+    </div>
+</main>
+
+<footer class="py-12 text-center border-t border-gray-100">
+    <p class="text-sm text-gray-400 px-5">&copy; 2025 My Recovery Journey. Not medical advice.</p>
+</footer>
+
+<script src="posts.js"></script>
+
+<script>
+    let visibleCount = 3;
+    const container = document.getElementById('timeline-container');
+    const loadBtn = document.getElementById('load-more-btn');
+
+    function renderPosts() {
+        const postsToShow = posts.slice(0, visibleCount);
+        container.innerHTML = postsToShow.map(post => `
+            <article class="flex flex-col md:flex-row bg-gray-50 rounded-3xl overflow-hidden hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="p-6 md:p-10 flex-1">
+                    <div class="flex flex-wrap items-center gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">${post.tag}</span>
+                        <time class="text-gray-400">${post.date}</time>
+                        <span class="text-gray-400 mx-1">•</span>
+                        <span class="text-gray-600">Pain: ${post.pain}</span>
+                        ${post.swelling !== 'N/A' ? `<span class="text-gray-400 mx-1">•</span><span class="text-gray-600">Swelling: ${post.swelling}</span>` : ''}
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">${post.title}</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">${post.description}</p>
+                    <a href="${post.link}" class="inline-flex items-center font-bold google-blue hover:underline">Read full entry &rarr;</a>
+                </div>
+                <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
+                    <img src="${post.image}" class="w-full h-full object-cover" alt="${post.title}">
+                </div>
+            </article>
+        `).join('');
+
+        // Hide button if no more posts
+        if (visibleCount >= posts.length) {
+            loadBtn.style.display = 'none';
+        }
     }
 
-    // Your existing active link highlighting code...
-    const currentPage = path.split("/").pop() || "index.html";
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("google-blue", "font-bold");
-            link.classList.remove("text-gray-500");
-        }
+    loadBtn.addEventListener('click', () => {
+        visibleCount += 5; // Load next 5 posts
+        renderPosts();
     });
-});
 
-        // Mobile Menu Logic
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    // Initial render
+    renderPosts();
 
-        menuBtn.addEventListener('click', () => {
-        // Toggle the 'hidden' class to show/hide the menu
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close menu when clicking a link (optional, but good for UX)
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-
-        const btn = document.getElementById('load-more-btn');
-        const olderEntries = document.getElementById('older-entries');
-
-        btn.addEventListener('click', function() {
-            if (olderEntries.classList.contains('hidden')) {
-                olderEntries.classList.remove('hidden');
-                btn.textContent = 'Show less';
-            } else {
-                olderEntries.classList.add('hidden');
-                btn.textContent = 'Load older entries';
-                document.getElementById('timeline').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    </script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+</script>
 </body>
 </html>
