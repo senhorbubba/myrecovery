@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Protocol | My ACL Recovery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <nav class="border-b border-gray-200 sticky top-0 bg-white/95 backdrop-blur-sm z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-gray-900">Knee<span class="google-blue">Comeback</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">Timeline</a>
+                <a href="exercises.html" class="nav-link-active">Exercises</a>
+                <a href="tips.html" class="hover:text-blue-600 transition-colors">Tips</a>
+                <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
+                Rehab Protocol
+            </h1>
+            <p class="text-xl text-gray-500 leading-relaxed italic">
+                Education only: Follow surgeon restriction and adapt based on pain levels. 
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-3xl mx-auto px-4 py-12">
+        <div class="flex space-x-2 border-b border-gray-200 mb-10 overflow-x-auto no-scrollbar">
+            <button onclick="showPhase('w1')" id="tab-w1" class="active-tab py-3 px-4 text-sm whitespace-nowrap">Week 1</button>
+            <button onclick="showPhase('w2')" id="tab-w2" class="text-gray-500 py-3 px-4 text-sm whitespace-nowrap border-b-2 border-transparent">Week 2</button>
+            <button onclick="showPhase('w3')" id="tab-w3" class="text-gray-500 py-3 px-4 text-sm whitespace-nowrap border-b-2 border-transparent">Weeks 3–4</button>
+            <button onclick="showPhase('w5')" id="tab-w5" class="text-gray-500 py-3 px-4 text-sm whitespace-nowrap border-b-2 border-transparent">Weeks 5–8</button>
+            <button onclick="showPhase('w9')" id="tab-w9" class="text-gray-500 py-3 px-4 text-sm whitespace-nowrap border-b-2 border-transparent">Weeks 9–12</button>
+        </div>
+
+        <div id="exercise-content">
+            
+            <section id="phase-w1" class="phase-content space-y-4">
+                <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl mb-6 text-sm text-blue-800">
+                    <strong>Goals:</strong> Control pain/swelling, protect graft/meniscus, restore passive extension, begin quad activation, and teach safety.
+                </div>
+                
+                <div class="ex-card-wrapper relative">
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/v1yaOz3o5VA/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w1e1', 'v1yaOz3o5VA')">
+                        <div><h3 class="font-bold">Heel Pump (Gym Ball & Band)</h3><p class="text-sm text-gray-500">4–5 × 20–30 reps daily</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w1e1" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w1e1" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative">
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/Y_NgNvyEXJ0/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w1e2', 'Y_NgNvyEXJ0')">
+                        <div><h3 class="font-bold">Prone Knee Extension (Gravity Only)</h3><p class="text-sm text-gray-500">3–5 × 2 min holds</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w1e2" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w1e2" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/yHNVIrAjLSE/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w1e3', 'yHNVIrAjLSE')">
+                        <div><h3 class="font-bold">Seated Assisted Knee Extension & Flexion</h3><p class="text-sm text-gray-500">3 × 8–10 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w1e3" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w1e3" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/-Ks3LQ9hupY/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w1e4', '-Ks3LQ9hupY')">
+                        <div><h3 class="font-bold">Wall-Supported Knee Flexion</h3><p class="text-sm text-gray-500">2–3 × 6–8 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w1e4" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w1e4" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/xeR8ontAVdI/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w1e5', 'xeR8ontAVdI')">
+                        <div><h3 class="font-bold">Quad Set (with or without EMS)</h3><p class="text-sm text-gray-500">4–5 × 5 sec holds</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w1e5" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w1e5" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+            </section>
+
+            <section id="phase-w2" class="phase-content hidden space-y-4">
+                <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl mb-6 text-sm text-blue-800">
+                    <strong>Goals:</strong> Reduce swelling, improve quad activation, increase ROM safely, start gentle hip work.
+                </div>
+                
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/Y_NgNvyEXJ0/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w2e1', 'Y_NgNvyEXJ0')">
+                        <div><h3 class="font-bold">Prone Knee Extension (Gravity + Optional Weight)</h3><p class="text-sm text-gray-500">3 × 3 min</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w2e1" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w2e1" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/xeR8ontAVdI/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w2e2', 'xeR8ontAVdI')">
+                        <div><h3 class="font-bold">Knee Extension Exercise with EMS</h3><p class="text-sm text-gray-500">3 × 8–10 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w2e2" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w2e2" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/ozNX6HeMDiE/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w2e3', 'ozNX6HeMDiE')">
+                        <div><h3 class="font-bold">Clamshell (No or Light Band)</h3><p class="text-sm text-gray-500">3 × 10–12 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w2e3" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w2e3" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+            </section>
+
+            <section id="phase-w3" class="phase-content hidden space-y-4">
+                <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl mb-6 text-sm text-blue-800">
+                    <strong>Goals:</strong> Normalize gait, improve quad control, increase flexion tolerance, build stability.
+                </div>
+                
+                <div class="ex-card-wrapper relative"> 
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/rFnJM_3pnOo/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w3e1', 'rFnJM_3pnOo')">
+                        <div><h3 class="font-bold">Standing Hamstring Activation</h3><p class="text-sm text-gray-500">3 × 10–12 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w3e1" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w3e1" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative">
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/INSERT_ID/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w3e2', 'INSERT_ID')">
+                        <div><h3 class="font-bold">Mini Squat (0–45°)</h3><p class="text-sm text-gray-500">3 × 8–10 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w3e2" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w3e2" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+            </section>
+
+            <section id="phase-w5" class="phase-content hidden space-y-4">
+                <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl mb-6 text-sm text-blue-800">
+                    <strong>Goals:</strong> Build strength, improve single-leg control, increase load tolerance.
+                </div>
+                
+                <div class="ex-card-wrapper relative">
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/INSERT_ID/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w5e1', 'INSERT_ID')">
+                        <div><h3 class="font-bold">Step-Up (Low Box, Slow Eccentric)</h3><p class="text-sm text-gray-500">3 × 8–10 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w5e1" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w5e1" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+
+                <div class="ex-card-wrapper relative">
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/INSERT_ID/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w5e2', 'INSERT_ID')">
+                        <div><h3 class="font-bold">Terminal Knee Extension (Band)</h3><p class="text-sm text-gray-500">3 × 15 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w5e2" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w5e2" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+            </section>
+
+            <section id="phase-w9" class="phase-content hidden space-y-4">
+                <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl mb-6 text-sm text-blue-800">
+                    <strong>Goals:</strong> Restore strength symmetry, improve control, prepare for running/sport.
+                </div>
+                
+                <div class="ex-card-wrapper relative">
+                    <div class="video-preview"><img src="https://img.youtube.com/vi/INSERT_ID/hqdefault.jpg" class="w-full"></div>
+                    <div class="flex items-center justify-between p-5 border border-gray-200 rounded-2xl cursor-pointer hover:border-blue-300 transition-all bg-white" onclick="toggleVideo('w9e1', 'INSERT_ID')">
+                        <div><h3 class="font-bold">Reverse Lunge</h3><p class="text-sm text-gray-500">3 × 8 reps</p></div>
+                        <div class="text-google-blue opacity-40"><svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                    </div>
+                    <div id="w9e1" class="hidden mt-3 p-2 bg-gray-50 rounded-xl border border-gray-200"><div class="aspect-video relative overflow-hidden rounded-lg bg-black"><iframe id="iframe-w9e1" class="absolute inset-0 w-full h-full" src="" frameborder="0" allowfullscreen></iframe></div></div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-12 text-center">
+        <p class="text-base text-gray-400">&copy; 2025 My Recovery Journey. Not medical advice.</p>
+    </footer>
+
+    
+    <script>
+        function toggleVideo(wrapperId, videoId) {
+            const wrapper = document.getElementById(wrapperId);
+            const iframe = document.getElementById('iframe-' + wrapperId);
+            
+            if (wrapper.classList.contains('hidden')) {
+                // Close all other open videos
+                document.querySelectorAll('[id^="w"]').forEach(el => {
+                    if (el.id.includes('e') && !el.classList.contains('hidden')) {
+                        el.classList.add('hidden');
+                        const otherIframe = el.querySelector('iframe');
+                        if (otherIframe) otherIframe.src = '';
+                    }
+                });
+
+                wrapper.classList.remove('hidden');
+                
+                // FIXED PLAYER: This handles both local testing and live sites
+                const isLocal = window.location.protocol === 'file:';
+                const origin = isLocal ? '' : `&origin=${window.location.origin}`;
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0${origin}`;
+            } else {
+                wrapper.classList.add('hidden');
+                iframe.src = '';
+            }
+        }
+
+        function showPhase(phaseId) {
+            document.querySelectorAll('.phase-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.no-scrollbar button').forEach(btn => {
+                btn.classList.remove('active-tab');
+                btn.classList.add('text-gray-500', 'border-transparent');
+            });
+            document.getElementById('phase-' + phaseId).classList.remove('hidden');
+            document.getElementById('tab-' + phaseId).classList.add('active-tab');
+            // Stop videos when switching tabs
+            document.querySelectorAll('iframe').forEach(f => f.src = '');
+            document.querySelectorAll('[id^=\"w\"]').forEach(el => { if(el.id.includes('e')) el.classList.add('hidden'); });
+        }
+    </script>
+</body>
+</html>

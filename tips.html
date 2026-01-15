@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Equipment | My ACL Recovery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .google-blue { color: #4285F4; }
+        .bg-google-blue { background-color: #4285F4; }
+        .text-google-blue { color: #4285F4; }
+        .img-top-focus { object-fit: cover; object-position: top; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased font-['Inter']">
+
+
+
+    <nav class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
+        <div class="max-w-5xl mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-gray-900">
+                Knee<span class="google-blue">Recovery</span>
+            </a>
+            <button class="md:hidden text-gray-500" aria-label="Toggle menu">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </button>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-500">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">Timeline</a>
+                <a href="exercises.html" class="hover:text-blue-600 transition-colors">Exercises</a>
+                <a href="tips.html" class="google-blue">Tips</a>
+                <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-12 md:py-20 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-5 text-center">
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-4">Recovery Tips</h1>
+            <p class="text-lg text-gray-500 leading-relaxed">Everything I've learned about managing swelling, gear, and travel during my recovery.</p>
+        </div>
+    </header>
+
+
+    <main class="max-w-5xl mx-auto px-5 py-12 lg:py-20">
+
+
+        
+        <div class="flex overflow-x-auto pb-4 mb-12 gap-3 no-scrollbar scroll-smooth">
+            <a href="#swelling" class="whitespace-nowrap px-5 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold hover:border-google-blue hover:text-google-blue transition-all">Swelling</a>
+            <a href="#equipment" class="whitespace-nowrap px-5 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold hover:border-google-blue hover:text-google-blue transition-all">Equipment</a>
+            <a href="#travel" class="whitespace-nowrap px-5 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold hover:border-google-blue hover:text-google-blue transition-all">Travel</a>
+            <a href="#dovsdont" class="whitespace-nowrap px-5 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold hover:border-google-blue hover:text-google-blue transition-all">Do vs Don't</a>
+        </div>
+
+        <div class="grid grid-cols-1 gap-16">
+<section id="swelling" class="scroll-mt-24">
+    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-8 flex items-center">
+        <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">01</span>
+        Swelling Control
+    </h2>
+
+    <div class="flex flex-col lg:flex-row gap-8 lg:items-start">
+        <div class="w-full lg:w-1/3 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 no-scrollbar">
+            <button onclick="switchTip('elevation')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Elevation - Do it Right
+            </button>
+            <button onclick="switchTip('ice')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Ice - Pain Control
+            </button>
+            <button onclick="switchTip('compression')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Compression - Daily Game Changer
+            </button>
+            <button onclick="switchTip('move')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Move the Knee - Better Drainage 
+            </button>
+            <button onclick="switchTip('walk')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Walk - Don't Push Through
+            </button>
+            <button onclick="switchTip('quads')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Activate the Quads - Fluid Drainage
+            </button>
+            <button onclick="switchTip('sleep')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Sleep Setup - It Matters
+            </button>
+            <button onclick="switchTip('hydration')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
+                Hydration & Salt - Be Aware
+            </button>
+        </div>
+
+        <div id="tip-content" class="w-full lg:w-2/3 bg-gray-50 rounded-3xl p-6 md:p-10 min-h-[450px] transition-all duration-300">
+            <div id="tip-display" class="opacity-100 transition-opacity duration-300">
+                <div class="aspect-video mb-8 rounded-2xl overflow-hidden shadow-sm bg-gray-200">
+                    <img id="tip-img" src="images/elevation.jpg" class="w-full h-full object-cover object-top" alt="Elevation">
+                </div>
+                <h3 id="tip-title" class="text-2xl font-black text-gray-900 mb-4">Elevation - Do it Right</h3>
+                <ul id="tip-list" class="space-y-4 text-gray-600">
+                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">01.</span> Keep the knee above heart level to let gravity drain fluid.</li>
+                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">02.</span> Use pillows under the ankle, never directly under the knee.</li>
+                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">03.</span> 20-30 minutes, multiple times a day.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const tipData = {
+        elevation: {
+            title: "Elevation - Do it Right",
+            img: "images/elevation.jpg",
+            points: ["Knee must be above heart level to be effective.", "Pillows should support the calf/ankle to maintain full extension.", "Avoid 'propping' under the knee, which encourages stiffness."]
+        },
+        ice: {
+            title: "Ice - Pain Control",
+            img: "images/ice.jpg",
+            points: ["Ice for 20 minutes every 2 hours in the early stages.", "Cold therapy constricts vessels to stop internal bleeding and pain.", "If using a machine, don't forget the thin barrier between skin and pad."]
+        },
+        compression: {
+            title: "Compression - Daily Game Changer",
+            img: "images/compression.webp",
+            points: ["Prevents fluid from pooling in the lower leg (edema).", "Snug but not restrictive—toes should feel warm and normal.", "Wear your compression sleeve from morning until bedtime."]
+        },
+        move: {
+            title: "Move the Knee - Better Drainage",
+            img: "images/move.jpg",
+            points: ["Ankle pumps 100x a day to keep blood flowing.", "Gentle heel slides lubricate the joint and break up scar tissue.", "Movement is the best 'pump' for your lymphatic system."]
+        },
+        walk: {
+            title: "Walk - Don't Push Through",
+            img: "images/walk.jpg",
+            points: ["Focus on 'Heel-to-Toe' mechanics, even with crutches.", "Stop before the pain spikes; swelling is a sign of overdoing it.", "Quality of movement matters more than distance covered."]
+        },
+        quads: {
+            title: "Activate the Quads - Fluid Drainage",
+            img: "images/quads.jpeg",
+            points: ["Quad sets: Squeeze the thigh and push the knee into the bed.", "The brain often 'disconnects' from the quad post-surgery.", "Activation helps clear swelling out of the joint capsule."]
+        },
+        sleep: {
+            title: "Sleep Setup - It Matters",
+            img: "images/sleep.png",
+            points: ["Keep a pillow between legs if side-sleeping.", "Ensuring extension during sleep is the hardest but most vital task.", "Keep your ice machine ready for middle-of-the-night flares."]
+        },
+        hydration: {
+            title: "Hydration & Salt - Be Aware",
+            img: "images/hydration.webp",
+            points: ["Excess salt causes the body to retain fluid in the joint.", "Hydrate to help kidneys flush out surgical inflammation.", "Anti-inflammatory diets (low sugar/salt) speed up the visible recovery."]
+        }
+    };
+
+    function switchTip(key) {
+        // Toggle Button Styles
+        document.querySelectorAll('.tip-btn').forEach(btn => btn.classList.remove('active-tip', 'bg-white'));
+        event.currentTarget.classList.add('active-tip');
+
+        // Animation and Content Swap
+        const display = document.getElementById('tip-display');
+        display.style.opacity = 0;
+        
+        setTimeout(() => {
+            const data = tipData[key];
+            document.getElementById('tip-title').innerText = data.title;
+            document.getElementById('tip-img').src = data.img;
+            document.getElementById('tip-list').innerHTML = data.points.map((pt, i) => `
+                <li class="flex items-start">
+                    <span class="text-google-blue mr-3 font-bold">${(i + 1).toString().padStart(2, '0')}.</span> 
+                    ${pt}
+                </li>
+            `).join('');
+            display.style.opacity = 1;
+        }, 200);
+    }
+</script>
+
+            <section id="equipment" class="scroll-mt-24">
+    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center">
+        <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">02</span>
+        Equipment that helps
+    </h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+    <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+        <img src="images/ice-machine.jpg" class="w-full h-full object-cover img-top-focus" alt="Ice Machine">
+    </div>
+    <h4 class="font-bold text-gray-900 mb-2">Ice Machines</h4>
+    <p class="text-sm text-gray-500 mb-6 flex-grow">Continuous cold therapy that was vital for the first 3 weeks post-op to manage deep tissue swelling.</p>
+    <div class="space-y-3 mt-auto">
+        <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+        <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+    </div>
+</div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/ice-packs.jpeg" class="w-full h-full bject-cover img-top-focus" alt="Gel Ice Packs">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Gel Ice Packs</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">A more affordable alternative to machines. I recommend having at least two so one is always frozen.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/powerdot.webp" class="w-full h-full bject-cover img-top-focus" alt="Therabody Powerdot">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Therabody Powerdot</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">NMES technology to help prevent muscle atrophy and "wake up" the quad when it stops firing.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/bands.jpeg" class="w-full h-full bject-cover img-top-focus" alt="Resistance Bands">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Resistance Bands</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">Essential for early-stage strength building and terminal knee extension (TKE) exercises.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/massage-gun.jpg" class="w-full h-full bject-cover img-top-focus" alt="Theragun">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Therabody Massage Gun</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">Crucial for releasing tight hamstrings and calves that overcompensate for the weak knee.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/strap.webp" class="w-full h-full bject-cover img-top-focus" alt="Stretching Strap">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Yoga Stretching Strap</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">A simple, non-elastic strap for passive extension and flexion exercises at home.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/crutches.webp" class="w-full h-full bject-cover img-top-focus" alt="Forearm Crutches">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Forearm Crutches</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">Provide much better stability and ergonomics than standard under-arm crutches.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/pillow.jpg" class="w-full h-full bject-cover img-top-focus" alt="Elevation Pillow">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Elevation Pillow</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">Specially shaped to keep the leg elevated above the heart without putting pressure behind the knee.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/brace.jpg" class="w-full h-full bject-cover img-top-focus" alt="Compression Brace">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Compression Brace</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">Helps with proprioception and provides structural confidence during early outdoor walks.</p>
+            <div class="space-y-3 mt-auto">
+                <a href="#" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="#" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+            <section id="travel" class="scroll-mt-24">
+    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-8 flex items-center">
+        <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">03</span>
+        Traveling Strategy
+    </h2>
+
+    <div class="space-y-8">
+        <div class="bg-blue-50 border border-blue-100 p-6 rounded-3xl">
+            <h4 class="font-bold text-google-blue mb-2 flex items-center">
+                <span class="mr-2">⚠️</span> The 6-Week Rule
+            </h4>
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                Surgeons generally recommend waiting <strong>6 weeks</strong> for long-haul flights to minimize DVT (clot) risks. If you must travel at 4 weeks, ensure you have prescribed blood thinners, compression socks, and a final clearance from your doctor.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <span class="text-2xl mr-3">✈️</span>
+                        <h4 class="font-bold text-gray-900 text-lg">Air Travel</h4>
+                    </div>
+                    <ul class="space-y-4 text-sm md:text-base text-gray-600">
+                        <li class="flex items-start">
+                            <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">1</span>
+                            <span><strong>Seat Choice:</strong> Book 1st row (bulkhead) or an aisle seat. You must be able to stretch the leg fully.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">2</span>
+                            <span><strong>Elevation:</strong> Use a carry-on or inflatable pillow under your foot during the flight.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">3</span>
+                            <span><strong>Wheelchair Service:</strong> Essential. Save your knee for the destination, not the airport terminal.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <span class="text-2xl mr-3">🚗</span>
+                        <h4 class="font-bold text-gray-900 text-lg">Car Travel</h4>
+                    </div>
+                    <ul class="space-y-4 text-sm md:text-base text-gray-600">
+                        <li class="flex items-start">
+                            <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">1</span>
+                            <span><strong>Position:</strong> Sit in the back seat. Stretch the operated leg horizontally across the seat bench.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">2</span>
+                            <span><strong>Frequency:</strong> Stop every 45-60 minutes. Get out, walk, and perform 10 ankle pumps.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">3</span>
+                            <span><strong>Ice:</strong> Pack a portable cooler with ice packs for immediate relief upon arrival.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 border border-gray-100 p-6 md:p-10 rounded-3xl">
+            <h4 class="text-xl font-bold text-gray-900 mb-8 flex items-center">
+                <span class="mr-3 text-2xl">🏛️</span> Sightseeing & Pacing
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="space-y-2">
+                    <p class="font-bold text-google-blue text-xs uppercase tracking-widest">Support</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Wear your compression brace. It provides the "structural confidence" needed for uneven surfaces or long museum halls.</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-bold text-google-blue text-xs uppercase tracking-widest">Hydration</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Travel causes inflammation. Drink 2x more water than usual and keep salt intake low to prevent the joint from filling with fluid.</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-bold text-google-blue text-xs uppercase tracking-widest">The "Stop" Rule</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">If the knee starts to throb or feel "full," your day is over. Pushing through leads to 48 hours of setback.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section id="dovsdont" class="scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center">
+                    <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">04</span>
+                    Do vs Don't
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-red-50 p-8 rounded-3xl">
+                        <h3 class="text-xl font-black text-red-900 mb-4 uppercase tracking-tight">The Don'ts</h3>
+                        <ul class="space-y-3 text-red-800 text-sm">
+                            <li class="flex items-start"><span class="mr-2">✕</span> Don't put a pillow directly under the knee (kills extension).</li>
+                            <li class="flex items-start"><span class="mr-2">✕</span> Don't skip your ankle pumps.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-8 rounded-3xl">
+                        <h3 class="text-xl font-black text-green-900 mb-4 uppercase tracking-tight">The Do's</h3>
+                        <ul class="space-y-3 text-green-800 text-sm">
+                            <li class="flex items-start"><span class="mr-2">✓</span> Do celebrate the small 1-degree gains.</li>
+                            <li class="flex items-start"><span class="mr-2">✓</span> Do focus on "pre-hab" even post-surgery.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="py-12 text-center border-t border-gray-100">
+        <p class="text-sm text-gray-400 px-5">&copy; 2025 My Recovery Journey. Not medical advice.</p>
+    </footer>
+
+</body>
+</html>
