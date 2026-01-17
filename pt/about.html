@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | My ACL Recovery</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+        (function() {
+    const path = window.location.pathname;
+    const savedLang = localStorage.getItem('user-language');
+    const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
+
+    // 1. Determine the Target Language
+    let targetLang = savedLang;
+    if (!targetLang) {
+        if (browserLang.startsWith('pt')) targetLang = 'pt';
+        else if (browserLang.startsWith('pl')) targetLang = 'pl';
+        else targetLang = 'en';
+        // Save the detected language for next time
+        localStorage.setItem('user-language', targetLang);
+    }
+
+    // 2. Redirect if the current path doesn't match the target language
+    // Only run redirect on the main entry points to avoid infinite loops
+    if (path === '/' || path.endsWith('index.html')) {
+        const isPtPage = path.includes('/pt/');
+        const isPlPage = path.includes('/pl/');
+        const isEnPage = !isPtPage && !isPlPage;
+
+        if (targetLang === 'pt' && !isPtPage) window.location.href = '/pt/index.html';
+        else if (targetLang === 'pl' && !isPlPage) window.location.href = '/pl/index.html';
+        else if (targetLang === 'en' && !isEnPage) window.location.href = '/index.html';
+    }
+})();
+        
+
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         .google-blue { color: #4285F4; }
@@ -21,7 +51,7 @@
 <nav class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
     <div class="max-w-5xl mx-auto px-5 py-4 flex justify-between items-center">
         <a href="index.html" class="text-xl font-bold tracking-tight text-gray-900">
-            Knee<span class="google-blue">Recovery</span>
+            Knee<span class="google-blue">Comeback</span>
         </a>
          
         <div class="flex items-center">
@@ -34,10 +64,10 @@
 
             <div class="flex items-center space-x-4 border-l pl-4 border-gray-200">
                 <div class="relative inline-block text-left">
-                    <select onchange="location = this.value;" class="bg-transparent text-sm font-semibold text-gray-500 hover:text-google-blue focus:outline-none cursor-pointer">
-                        <option value="/index.html">EN</option>
-                        <option value="/pt/index.html">PT</option>
-                        <option value="/pl/index.html">PL</option>
+                    <select id="lang-select" onchange="changeLanguage(this.value)" class="bg-transparent text-sm font-semibold text-gray-500 hover:text-google-blue focus:outline-none cursor-pointer">
+                        <option value="en">EN</option>
+                        <option value="pt">PT</option>
+                        <option value="pl">PL</option>
                     </select>
                 </div>
 
@@ -64,7 +94,7 @@
                 What is my story and why this journal exists
             </h1>
             <p class="text-lg md:text-xl text-gray-500 leading-relaxed italic">
-                ACL reconstruction and meniscus repair changed everything in an instant. What followed was months of deliberate, repetitive, often frustrating work.
+               ACL reconstruction and meniscus repair changed everything in an instant. What followed was not heroic or glamorous - it was months of deliberate, repatitive and often frustrating work. 
             </p>
         </div>
     </section>
@@ -73,27 +103,49 @@
         <article class="space-y-8 text-gray-600 leading-relaxed text-base md:text-lg">
             
             <p class="text-xl font-bold text-gray-900">
-                This journal exists to document that work honestly.
+                This journal exists to document that work honestly, day by day, to show what recovery actually looks like. 
             </p>
 
             <p>
-                I’m 42 years old, Polish, and living in Brazil. I’ve been an athlete my entire life—competing in tennis since age 7 and later in Masters ITF competitions. Beyond the court, my life has been built around movement: kitesurfing, surfing, snowboarding, and golf.
-            </p>
+               I’m 42 years old, Polish, and living in Brazil. I’ve been an athlete my entire life. I started playing tennis at the age of 7, competed through my university years in Scotland, and today I play at a high level (5.0 USTA equivalent), including recente Masters ITF competitions. Sport has always been part of my identity.
+Beyond tennis, I’m passionate about sports that involve rotation, speed, and impact: kitesurfing, surfing, wakeboarding, snowboarding, skateboarding, and golf. I’ve built my life around movement.            </p>
 
             <h3 class="text-2xl font-bold text-gray-900 pt-4">The Turning Point</h3>
             
             <p>
-                Five years after a partial tear, a simple movement—cleaning a table—caused a complex bucket-handle meniscus tear. My knee locked, and I needed emergency surgery. My doctor recommended doing both the meniscus repair and ACL reconstruction at once.
+                Five years ago, a wakeboarding accident partially tore my ACL. At the time, we chose a conservative path. Physiotherapy helped stabilize the knee, and while I experienced occasional instability, I was able to keep playing and living actively.
+            </p>
+            <p>
+                That changed recently.
+            </p>
+            <p>
+                While playing competitive tennis, I tore my meniscus. The tear was initially small, I could still walk normally, and despite my doctor recommending surgery, I decided to wait. We tried a conservative approach using Hymovis injections, aimed at treating a medial meniscus tear.
+            </p>
+            <p>
+                The day before the procedure, everything collapsed.
+                A simple movement - cleaning a table - caused the meniscus to tear again, this time as a bucket-handle tear. My knee locked completely. I needed emergency surgery.
+
+            </p>
+            <p>
+                During that process, my doctor addressed the long-standing instability and strongly recommended ACL reconstruction alongside the meniscus repair. I underwent both surgeries at once.
+            </p>
+            <p>
+                That moment marked a clear before and after.
             </p>
 
             <div class="bg-blue-50 border-l-4 border-google-blue p-6 md:p-10 my-12 rounded-r-2xl">
                 <p class="text-lg md:text-xl text-gray-800 font-semibold italic">
-                    "This journal documents the physical struggle, the slow progress, the setbacks, the doubts, and the emotional reality of rebuilding."
+                    "This journal documents what came next:
+                    the physical struggle, the slow progress, the setbacks, the doubts, the discipline, and the emotional reality of recovery.
+                    "
                 </p>
             </div>
 
             <p>
                 It’s written day by day, week by week, to make this path clearer and less lonely for anyone going through it.
+            </p>
+            <p>
+                If you’re at the beginning of this journey, in the middle of it, or somewhere years after surgery still trying to make sense of your knee and your confidence, this journal is for you.
             </p>
 
             <div class="text-center pt-8">
@@ -115,8 +167,23 @@
 
 
 
-    <footer class="py-12 text-center border-t border-gray-100">
-        <p class="text-sm text-gray-400 px-5">&copy; 2025 My Recovery Journey. Not medical advice.</p>
+    <footer class="bg-white border-t border-gray-200 py-12 text-center">
+    <div class="max-w-4xl mx-auto px-5">
+        <div class="flex flex-col items-center space-y-4">
+            <a href="mailto:dczarcin@gmail.com" class="text-sm font-semibold text-gray-500 hover:text-google-blue transition-colors flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Contact Me
+            </a>
+
+            <p class="text-base text-gray-400"> My Personal Recovery Journey. Not medical advice.</p>
+            
+            <a href="#" class="text-xs font-bold uppercase text-gray-300 hover:text-gray-600 transition-colors tracking-widest">
+                Back to top &uarr;
+            </a>
+        </div>
+    </div>
     </footer>
     <script>
     // Mobile Menu Logic
@@ -135,6 +202,22 @@
             mobileMenu.classList.add('hidden');
         });
     });
+    function changeLanguage(lang) {
+    localStorage.setItem('user-language', lang);
+    if (lang === 'pt') window.location.href = '/pt/index.html';
+    else if (lang === 'pl') window.location.href = '/pl/index.html';
+    else window.location.href = '/index.html';
+}
+
+// Sync the dropdown state on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const path = window.location.pathname;
+    const select = document.getElementById('lang-select');
+    
+    if (path.includes('/pt/')) select.value = 'pt';
+    else if (path.includes('/pl/')) select.value = 'pl';
+    else select.value = 'en';
+});
     </script>
 
 </body>

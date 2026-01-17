@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips & Equipment | My ACL Recovery</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+        (function() {
+    const path = window.location.pathname;
+    const savedLang = localStorage.getItem('user-language');
+    const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
+
+    // 1. Determine the Target Language
+    let targetLang = savedLang;
+    if (!targetLang) {
+        if (browserLang.startsWith('pt')) targetLang = 'pt';
+        else if (browserLang.startsWith('pl')) targetLang = 'pl';
+        else targetLang = 'en';
+        // Save the detected language for next time
+        localStorage.setItem('user-language', targetLang);
+    }
+
+    // 2. Redirect if the current path doesn't match the target language
+    // Only run redirect on the main entry points to avoid infinite loops
+    if (path === '/' || path.endsWith('index.html')) {
+        const isPtPage = path.includes('/pt/');
+        const isPlPage = path.includes('/pl/');
+        const isEnPage = !isPtPage && !isPlPage;
+
+        if (targetLang === 'pt' && !isPtPage) window.location.href = '../pt/index.html';
+        else if (targetLang === 'pl' && !isPlPage) window.location.href = '../pl/index.html';
+        else if (targetLang === 'en' && !isEnPage) window.location.href = '../index.html';
+    }
+})();
+
+
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         .google-blue { color: #4285F4; }
@@ -20,7 +50,7 @@
 <nav class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
     <div class="max-w-5xl mx-auto px-5 py-4 flex justify-between items-center">
         <a href="index.html" class="text-xl font-bold tracking-tight text-gray-900">
-            Knee<span class="google-blue">Recovery</span>
+            Knee<span class="google-blue">Comeback</span>
         </a>
          
         <div class="flex items-center">
@@ -33,10 +63,10 @@
 
             <div class="flex items-center space-x-4 border-l pl-4 border-gray-200">
                 <div class="relative inline-block text-left">
-                    <select onchange="location = this.value;" class="bg-transparent text-sm font-semibold text-gray-500 hover:text-google-blue focus:outline-none cursor-pointer">
-                        <option value="/index.html">EN</option>
-                        <option value="/pt/index.html">PT</option>
-                        <option value="/pl/index.html">PL</option>
+                    <select id="lang-select" onchange="changeLanguage(this.value)" class="bg-transparent text-sm font-semibold text-gray-500 hover:text-google-blue focus:outline-none cursor-pointer">
+                        <option value="en">EN</option>
+                        <option value="pt">PT</option>
+                        <option value="pl">PL</option>
                     </select>
                 </div>
 
@@ -128,6 +158,23 @@
 </section>
 
 <script>
+
+    function changeLanguage(lang) {
+    localStorage.setItem('user-language', lang);
+    if (lang === 'pt') window.location.href = '/pt/index.html';
+    else if (lang === 'pl') window.location.href = '/pl/index.html';
+    else window.location.href = '/index.html';
+}
+
+// Sync the dropdown state on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const path = window.location.pathname;
+    const select = document.getElementById('lang-select');
+    
+    if (path.includes('/pt/')) select.value = 'pt';
+    else if (path.includes('/pl/')) select.value = 'pl';
+    else select.value = 'en';
+});
 
     // Mobile Menu Logic
 const menuBtn = document.getElementById('menu-btn');
@@ -444,8 +491,23 @@ mobileLinks.forEach(link => {
         </div>
     </main>
 
-    <footer class="py-12 text-center border-t border-gray-100">
-        <p class="text-sm text-gray-400 px-5">&copy; 2025 My Recovery Journey. Not medical advice.</p>
+     <footer class="bg-white border-t border-gray-200 py-12 text-center">
+    <div class="max-w-4xl mx-auto px-5">
+        <div class="flex flex-col items-center space-y-4">
+            <a href="mailto:dczarcin@gmail.com" class="text-sm font-semibold text-gray-500 hover:text-google-blue transition-colors flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Contact Me
+            </a>
+
+            <p class="text-base text-gray-400"> My Personal Recovery Journey. Not medical advice.</p>
+            
+            <a href="#" class="text-xs font-bold uppercase text-gray-300 hover:text-gray-600 transition-colors tracking-widest">
+                Back to top &uarr;
+            </a>
+        </div>
+    </div>
     </footer>
 
 </body>
