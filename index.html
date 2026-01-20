@@ -74,11 +74,15 @@
     <div id="timeline-container" class="space-y-10">
         </div>
 
-    <div class="mt-16 text-center">
-        <button id="load-more-btn" class="w-full py-5 border-2 border-gray-100 rounded-2xl text-gray-600 font-bold hover:bg-gray-50 transition-all">
-            Load older entries
-        </button>
-    </div>
+    <div class="mt-16 text-center space-y-4">
+    <button id="load-more-btn" class="w-full py-5 border-2 border-gray-100 rounded-2xl text-gray-600 font-bold hover:bg-gray-50 transition-all">
+        Load older entries
+    </button>
+    
+    <button id="first-entry-btn" class="text-sm font-bold google-blue hover:underline block mx-auto">
+        Go to the very first entry &darr;
+    </button>
+</div>
 </main>
 
  <footer class="bg-white border-t border-gray-200 py-12 text-center">
@@ -106,6 +110,7 @@
     let visibleCount = 3;
     const container = document.getElementById('timeline-container');
     const loadBtn = document.getElementById('load-more-btn');
+    const firstEntryBtn = document.getElementById('first-entry-btn'); // Ensure this ID exists in your HTML
 
     function renderPosts() {
         const postsToShow = posts.slice(0, visibleCount);
@@ -129,15 +134,33 @@
             </article>
         `).join('');
 
-        // Hide button if no more posts
+        // Hide buttons if no more posts are left to load
         if (visibleCount >= posts.length) {
-            loadBtn.style.display = 'none';
+            if (loadBtn) loadBtn.style.display = 'none';
+            if (firstEntryBtn) firstEntryBtn.style.display = 'none';
         }
     }
 
+    // Load next 5 posts
     loadBtn.addEventListener('click', () => {
-        visibleCount += 5; // Load next 5 posts
+        visibleCount += 5;
         renderPosts();
+    });
+
+    // Jump to First Entry (Oldest) Logic
+    firstEntryBtn.addEventListener('click', () => {
+        visibleCount = posts.length; // Load everything
+        renderPosts();
+
+        // Use requestAnimationFrame to ensure the DOM has updated and rendered 
+        // the new height before we try to scroll to it.
+        requestAnimationFrame(() => {
+            // Mobile-friendly smooth scroll to the bottom of the page
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
     });
 
     // Initial render
@@ -146,7 +169,9 @@
     // Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
 </script>
 </body>
 </html>
