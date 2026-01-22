@@ -65,6 +65,30 @@
     </div>
 </section>
 
+<section class="bg-gray-50 py-16 px-5 border-y border-gray-100">
+    <div class="max-w-2xl mx-auto text-center">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Stay updated on my recovery</h3>
+        <p class="text-gray-600 mb-8">Get notified when I post new equipment reviews or rehab milestones.</p>
+        
+        <form id="email-form" class="flex flex-col sm:flex-row gap-3">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                required 
+                class="flex-1 px-5 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
+            >
+            <button 
+                type="submit" 
+                class="bg-google-blue text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition-colors shadow-lg"
+            >
+                Notify Me
+            </button>
+        </form>
+        <div id="form-message" class="mt-4 text-sm font-medium hidden"></div>
+    </div>
+</section>
+
 <main id="timeline" class="max-w-4xl mx-auto px-5 py-16 border-t border-gray-100">
     <div class="text-center mb-16">
         <h2 class="text-3xl font-black text-gray-900">The Recovery Timeline</h2>
@@ -172,6 +196,31 @@
     if (menuBtn && mobileMenu) {
         menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     }
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyF9k4tCFrO1JtFx6n2BLW7T-VGil2CeBFcZhPIbSvyljPZlIZa2gmuJoDLNh7eszkbIg/exec';
+    const form = document.getElementById('email-form');
+    const msg = document.getElementById('form-message');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        msg.classList.remove('hidden');
+        msg.textContent = "Processing...";
+        msg.className = "mt-4 text-sm font-medium text-gray-500";
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.textContent = "Great! You're on the list.";
+                msg.className = "mt-4 text-sm font-medium text-green-600";
+                form.reset();
+                setTimeout(() => msg.classList.add('hidden'), 5000);
+            })
+            .catch(error => {
+                msg.textContent = "Error! Try again later.";
+                msg.className = "mt-4 text-sm font-medium text-red-600";
+            });
+    });
+
 </script>
 </body>
 </html>
