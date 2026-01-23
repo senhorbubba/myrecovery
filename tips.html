@@ -74,169 +74,252 @@
 
         <div class="grid grid-cols-1 gap-16">
 <section id="swelling" class="scroll-mt-24">
-    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-8 flex items-center">
+    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-3 flex items-center">
         <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">01</span>
-        Swelling Control
+        Swelling Control After ACL Surgery
     </h2>
+
+    <p class="text-gray-500 mb-8 max-w-3xl">
+        These are the swelling control habits that helped me the most after ACL and meniscus surgery: elevation, ice, compression, gentle movement, and smart walking. Not medical advice, just what worked in my recovery.
+        
+    </p>
 
     <div class="flex flex-col lg:flex-row gap-8 lg:items-start">
         <div class="w-full lg:w-1/3 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 no-scrollbar">
             <button onclick="switchTip('elevation')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Elevation - Do it Right
+                Elevation: Above the Heart
             </button>
             <button onclick="switchTip('ice')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Ice - Pain Control
+                Ice: Calm Pain and Heat
             </button>
             <button onclick="switchTip('compression')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Compression - Daily Game Changer
+                Compression: All-Day Support
             </button>
             <button onclick="switchTip('move')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Move the Knee - Better Drainage 
+                Gentle Movement: Better Drainage
             </button>
             <button onclick="switchTip('walk')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Walk - Don't Push Through
+                Walking: Do Not Push Through
             </button>
             <button onclick="switchTip('quads')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Activate the Quads - Fluid Drainage
+                Quad Activation: Pump the Fluid
             </button>
             <button onclick="switchTip('sleep')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Sleep Setup - It Matters
+                Sleep Setup: Extension Matters
             </button>
             <button onclick="switchTip('hydration')" class="tip-btn flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition-all duration-200 font-bold text-sm">
-                Hydration & Salt - Be Aware
+                Hydration and Salt: Control Retention
             </button>
         </div>
 
         <div id="tip-content" class="w-full lg:w-2/3 bg-gray-50 rounded-3xl p-6 md:p-10 min-h-[450px] transition-all duration-300">
             <div id="tip-display" class="opacity-100 transition-opacity duration-300">
                 <div class="aspect-video mb-8 rounded-2xl overflow-hidden shadow-sm bg-gray-200">
-                    <img id="tip-img" src="images/elevation.jpg" class="w-full h-full object-cover object-top" alt="Elevation">
+                    <img id="tip-img" src="images/acl-swelling-control-elevation-above-heart.jpg" class="w-full h-full object-cover object-top" alt="Elevation above heart level to reduce swelling after ACL surgery" loading="lazy">
                 </div>
-                <h3 id="tip-title" class="text-2xl font-black text-gray-900 mb-4">Elevation - Do it Right</h3>
+
+                <h3 id="tip-title" class="text-2xl font-black text-gray-900 mb-4">Elevation: Above the Heart</h3>
+
                 <ul id="tip-list" class="space-y-4 text-gray-600">
-                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">01.</span> Keep the knee above heart level to let gravity drain fluid.</li>
-                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">02.</span> Use pillows under the ankle, never directly under the knee.</li>
-                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">03.</span> 20-30 minutes, multiple times a day.</li>
+                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">01.</span> Keep the knee above heart level so gravity can help drain fluid.</li>
+                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">02.</span> Support under the calf and ankle, not directly under the knee.</li>
+                    <li class="flex items-start"><span class="text-google-blue mr-3 font-bold">03.</span> Use 20 to 30 minutes, multiple times a day, especially after walking.</li>
                 </ul>
+
+                <p class="mt-6 text-sm text-gray-500">
+                    Learn details from my <a href="index.html" class="underline decoration-gray-300 hover:decoration-blue-400">Timeline</a> or browse my <a href="exercises.html" class="underline decoration-gray-300 hover:decoration-blue-400">Exercises</a> for gentle movement ideas.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <script>
-
     // Mobile Menu Logic
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-menuBtn.addEventListener('click', () => {
-    // Toggle the 'hidden' class to show/hide the menu
-    mobileMenu.classList.toggle('hidden');
-});
-
-// Close menu when clicking a link (optional, but good for UX)
-const mobileLinks = mobileMenu.querySelectorAll('a');
-mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
     });
-});
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
     const tipData = {
         elevation: {
-            title: "Elevation - Do it Right",
-            img: "images/elevation.jpg",
-            points: ["Knee must be above heart level to be effective.", "Pillows should support the calf/ankle to maintain full extension.", "Avoid 'propping' under the knee, which encourages stiffness."]
+            title: "Elevation: Above the Heart",
+            img: "images/acl-swelling-control-elevation-above-heart.jpg",
+            alt: "Elevation above heart level to reduce swelling after ACL surgery and meniscus repair",
+            points: [
+                "Knee must be above heart level to be effective for swelling control.",
+                "Support the calf and ankle to protect extension and reduce stiffness.",
+                "Avoid propping directly under the knee, which encourages a bent knee position."
+            ],
+            
         },
         ice: {
-            title: "Ice - Pain Control",
-            img: "images/ice.jpg",
-            points: ["Ice for 20 minutes every 2 hours in the early stages.", "Cold therapy constricts vessels to stop internal bleeding and pain.", "If using a machine, don't forget the thin barrier between skin and pad."]
+            title: "Ice: Calm Pain and Heat",
+            img: "images/acl-swelling-control-ice-cold-therapy.jpg",
+            alt: "Ice and cold therapy for pain control and swelling after ACL surgery",
+            points: [
+                "Use cold therapy in short sessions, especially in the early phase, to calm pain and heat.",
+                "Cold can reduce the feeling of pressure and help you settle swelling after activity.",
+                "If using a machine, keep a thin barrier between skin and pad for comfort."
+            ],
+            
         },
         compression: {
-            title: "Compression - Daily Game Changer",
-            img: "images/compression.webp",
-            points: ["Prevents fluid from pooling in the lower leg (edema).", "Snug but not restrictive—toes should feel warm and normal.", "Wear your compression sleeve from morning until bedtime."]
+            title: "Compression: All-Day Support",
+            img: "images/acl-swelling-control-compression-knee-sleeve.webp",
+            alt: "Compression knee sleeve used to control swelling after ACL surgery during walking and travel",
+            points: [
+                "Compression helps prevent fluid from pooling in the lower leg when you are upright.",
+                "Snug but not restrictive: toes should feel warm and normal.",
+                "I used a sleeve on busy days and travel days when I knew I would be walking more."
+            ],
+            
         },
         move: {
-            title: "Move the Knee - Better Drainage",
-            img: "images/move.jpg",
-            points: ["Ankle pumps 100x a day to keep blood flowing.", "Gentle heel slides lubricate the joint and break up scar tissue.", "Movement is the best 'pump' for your lymphatic system."]
+            title: "Gentle Movement: Better Drainage",
+            img: "images/acl-swelling-control-ankle-pumps-heel-slides.jpg",
+            alt: "Ankle pumps and heel slides to support drainage and reduce swelling after ACL surgery",
+            points: [
+                "Ankle pumps help keep circulation moving, especially when you are stuck resting.",
+                "Gentle heel slides lubricate the joint and build motion without forcing it.",
+                "Movement acts like a pump, which helped me manage swelling better than pure rest."
+            ],
+           
         },
         walk: {
-            title: "Walk - Don't Push Through",
-            img: "images/walk.jpg",
-            points: ["Focus on 'Heel-to-Toe' mechanics, even with crutches.", "Stop before the pain spikes; swelling is a sign of overdoing it.", "Quality of movement matters more than distance covered."]
+            title: "Walking: Do Not Push Through",
+            img: "images/acl-swelling-control-walking-heel-to-toe.jpg",
+            alt: "Heel to toe walking mechanics during ACL recovery to avoid swelling flare-ups",
+            points: [
+                "Focus on heel to toe mechanics, even with crutches, to avoid compensations.",
+                "Stop before pain spikes: swelling is a signal you did too much.",
+                "Quality of steps matters more than distance, especially early on."
+            ],
+            
         },
         quads: {
-            title: "Activate the Quads - Fluid Drainage",
-            img: "images/quads.jpeg",
-            points: ["Quad sets: Squeeze the thigh and push the knee into the bed.", "The brain often 'disconnects' from the quad post-surgery.", "Activation helps clear swelling out of the joint capsule."]
+            title: "Quad Activation: Pump the Fluid",
+            img: "images/acl-swelling-control-quad-sets-activation.jpeg",
+            alt: "Quad activation and quad sets to support swelling control after ACL surgery",
+            points: [
+                "Quad sets: squeeze the thigh and push the knee gently into the bed.",
+                "The brain often disconnects from the quad after surgery, so it needs retraining.",
+                "Activation helped my knee feel less swollen and more stable over time."
+            ],
+           
         },
         sleep: {
-            title: "Sleep Setup - It Matters",
-            img: "images/sleep.png",
-            points: ["Keep a pillow between legs if side-sleeping.", "Ensuring extension during sleep is the hardest but most vital task.", "Keep your ice machine ready for middle-of-the-night flares."]
+            title: "Sleep Setup: Extension Matters",
+            img: "images/acl-swelling-control-sleep-setup-extension.png",
+            alt: "Sleep setup to maintain knee extension and reduce swelling after ACL surgery",
+            points: [
+                "If side sleeping, a pillow between legs can reduce twisting and discomfort.",
+                "Keeping extension during sleep is hard but mattered a lot for stiffness control.",
+                "Have your ice or elevation setup ready for middle of the night flare-ups."
+            ],
+      
         },
         hydration: {
-            title: "Hydration & Salt - Be Aware",
-            img: "images/hydration.webp",
-            points: ["Excess salt causes the body to retain fluid in the joint.", "Hydrate to help kidneys flush out surgical inflammation.", "Anti-inflammatory diets (low sugar/salt) speed up the visible recovery."]
+            title: "Hydration and Salt: Control Retention",
+            img: "images/acl-swelling-control-hydration-salt.webp",
+            alt: "Hydration and salt awareness to reduce fluid retention and swelling after ACL surgery",
+            points: [
+                "High salt days made me feel more puffy, including around the knee.",
+                "Hydration supports recovery and helps your body manage inflammation better.",
+                "I tried to keep sugar and salt in check when swelling was stubborn."
+            ],
+          
         }
     };
 
     function switchTip(key) {
-        // Toggle Button Styles
-        document.querySelectorAll('.tip-btn').forEach(btn => btn.classList.remove('active-tip', 'bg-white'));
-        event.currentTarget.classList.add('active-tip');
+      document.querySelectorAll('.tip-btn').forEach(btn => btn.classList.remove('active-tip', 'bg-white'));
+      event.currentTarget.classList.add('active-tip');
 
-        // Animation and Content Swap
-        const display = document.getElementById('tip-display');
-        display.style.opacity = 0;
-        
-        setTimeout(() => {
-            const data = tipData[key];
-            document.getElementById('tip-title').innerText = data.title;
-            document.getElementById('tip-img').src = data.img;
-            document.getElementById('tip-list').innerHTML = data.points.map((pt, i) => `
-                <li class="flex items-start">
-                    <span class="text-google-blue mr-3 font-bold">${(i + 1).toString().padStart(2, '0')}.</span> 
-                    ${pt}
-                </li>
-            `).join('');
-            display.style.opacity = 1;
-        }, 200);
-    }
+      const display = document.getElementById('tip-display');
+      display.style.opacity = 0;
+
+      setTimeout(() => {
+          const data = tipData[key];
+          document.getElementById('tip-title').innerText = data.title;
+
+          const imgEl = document.getElementById('tip-img');
+          imgEl.src = data.img;
+          imgEl.alt = data.alt;
+
+          document.getElementById('tip-list').innerHTML = data.points.map((pt, i) => `
+              <li class="flex items-start">
+                  <span class="text-google-blue mr-3 font-bold">${(i + 1).toString().padStart(2, '0')}.</span>
+                  ${pt}
+              </li>
+          `).join('');
+
+          // Remove any previous links block
+          const linkEl = document.getElementById('tip-links');
+          if (linkEl) linkEl.remove();
+
+          // Only add the links block if linkHtml exists
+          if (data.linkHtml) {
+              const p = document.createElement('p');
+              p.id = 'tip-links';
+              p.className = 'mt-6 text-sm text-gray-500';
+              p.innerHTML = data.linkHtml;
+              document.getElementById('tip-list').insertAdjacentElement('afterend', p);
+          }
+
+          display.style.opacity = 1;
+      }, 200);
+  }
+
 </script>
 
-        <section id="equipment" class="scroll-mt-24">
-
+  <section id="equipment" class="scroll-mt-24">
 
     <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center">
         <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">02</span>
-        Equipment that helps
+        Recovery Equipment for ACL & Meniscus Surgery
     </h2>
 
-    
+    <p class="text-gray-500 mb-8 max-w-3xl">
+        One of the most common questions after ACL or meniscus surgery is: <strong>what gear actually helps recovery?</strong>
+        These are the tools I personally used to control swelling, manage pain, activate muscles, and stay consistent during rehab.
+    </p>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
-    <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-        <img src="images/ice-machine.jpg" class="w-full h-full object-cover img-top-focus" alt="Ice Machine">
-    </div>
-    <h4 class="font-bold text-gray-900 mb-2">Ice Machines</h4>
-    <p class="text-sm text-gray-500 mb-6 flex-grow">Continuous cold therapy that was a game changer in my first weeks post-op. I used a Game Ready system and it made a real difference when icing was frequent and swelling control mattered most.</p>
-    <div class="space-y-3 mt-auto">
-        <a href="https://amzn.to/3YOqXuw" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
-        <a href="product/icemachine.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
-    </div>
-</div>
+            <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
+                <img src="images/ice-machine.jpg" class="w-full h-full object-cover img-top-focus" alt="Cold therapy ice machine for swelling control after ACL surgery">
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Ice Machines</h4>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                Continuous cold therapy was a game changer in my first weeks after ACL and meniscus surgery.
+                I used a Game Ready system, and it made a real difference when icing was frequent and swelling control mattered most.
+            </p>
+            <div class="space-y-3 mt-auto">
+                <a href="https://amzn.to/3YOqXuw" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
+                <a href="product/icemachine.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
+            </div>
+        </div>
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/ice-packs.jpeg" class="w-full h-full bject-cover img-top-focus" alt="Gel Ice Packs">
+                <img src="images/fabric-ice-bag-straps-knee.jpeg" class="w-full h-full bject-cover img-top-focus" alt="Reusable ice bag with straps for knee swelling after surgery">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Ice Bag</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">A simple, refillable bag with straps where you add real ice. I preferred this over gel packs - colder, longer lasting, and more effective when swelling really needed to come down.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                A simple refillable ice bag with straps where you add real ice.
+                I preferred this over gel packs because it stays colder longer and was more effective when swelling needed to come down fast.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/49K9etb" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/icebag.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -245,10 +328,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/powerdot.webp" class="w-full h-full bject-cover img-top-focus" alt="Therabody Powerdot">
+                <img src="images/ems-powerdot-quads-acl-rehab.webp" class="w-full h-full bject-cover img-top-focus" alt="EMS muscle stimulator for quad activation after ACL surgery">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Therabody PowerDot</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">NMES technology to help prevent muscle atrophy and “wake up” the quad when it stops firing. There are many devices like this. I used PowerDot because it’s simple and easy to use, even if it’s not the most customizable.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                NMES technology that helped prevent muscle atrophy and wake up the quad when it stopped firing.
+                There are many devices like this; I used PowerDot because it was simple and easy to use during early rehab.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/3Nsnkb7" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/emsmachine.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -257,10 +343,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/bandsall.jpg" class="w-full h-full bject-cover img-top-focus" alt="Resistance Bands">
+                <img src="images/resistance-bands-acl-rehab-kit.jpg" class="w-full h-full bject-cover img-top-focus" alt="Resistance bands for ACL rehab and knee strengthening">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Resistance Bands</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">Essential for early-stage strength work and terminal knee extension (TKE). I used these almost daily, and investing in good-quality bands made a real difference compared to cheap ones.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                Essential for early-stage strength work, quad activation, and terminal knee extension.
+                I used these almost daily, and higher-quality bands made a noticeable difference in control and comfort.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/3Nso3cl" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/bands.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -269,10 +358,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/massage-gun.jpg" class="w-full h-full bject-cover img-top-focus" alt="Theragun">
+                <img src="images/massage-gun-knee-rehab.jpg" class="w-full h-full bject-cover img-top-focus" alt="Massage gun for muscle recovery after knee surgery">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Therabody Massage Gun</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">Essential for managing tight hamstrings, calves, and quads during recovery. On days without physio, this helped me release tension in the operated leg and stay consistent.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                Extremely helpful for tight hamstrings, calves, and quads during recovery.
+                On days without physio, this helped me release tension in the operated leg and stay consistent.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/4qyTSiq" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/massagegun.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -281,10 +373,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/yogastrap.jpg" class="w-full h-full bject-cover img-top-focus" alt="Stretching Strap">
+                <img src="images/stretching-strap-knee-flexion.jpg" class="w-full h-full bject-cover img-top-focus" alt="Stretching strap for knee flexion and extension after surgery">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Yoga Stretching Strap</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">A simple, non-elastic strap for passive knee extension and flexion at home. Later in recovery, I also used it to stretch the rest of my body and gradually get back into shape.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                A simple non-elastic strap for passive knee extension and flexion at home.
+                Later in recovery, I also used it to stretch the rest of my body and regain mobility.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/49t5gpW" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/yogastrap.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -293,10 +388,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/crutchesmy.jpg" class="w-full h-full bject-cover img-top-focus" alt="Forearm Crutches">
+                <img src="images/crutchesmy.jpg" class="w-full h-full bject-cover img-top-focus" alt="Forearm crutches for ACL surgery recovery">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Forearm Crutches</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">Offer better stability and ergonomics than standard under-arm crutches. I used them daily for about eight weeks, so investing in high-quality ones that could comfortably support my weight made sense.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                More stable and ergonomic than standard under-arm crutches.
+                I used them daily for about eight weeks, so investing in comfortable, high-quality ones made a big difference.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/4pOGjdp" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/crutches.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -305,10 +403,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/pillow.jpg" class="w-full h-full bject-cover img-top-focus" alt="Elevation Pillow">
+                <img src="images/pillow.jpg" class="w-full h-full bject-cover img-top-focus" alt="Elevation pillow for knee swelling after ACL surgery">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Elevation Pillow</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">A specially shaped pillow that elevates the leg properly while protecting knee extension. Regular pillows worked at first, but this made elevation easier and more consistent.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                A specially shaped pillow that elevates the leg properly while protecting knee extension.
+                Regular pillows worked at first, but this made elevation easier and more consistent.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/4sQ7yHa" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/pillow.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -317,10 +418,13 @@ mobileLinks.forEach(link => {
 
         <div class="border border-gray-100 bg-white p-5 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-square bg-gray-50 rounded-2xl mb-4 overflow-hidden">
-                <img src="images/bauerfeind.jpg" class="w-full h-full bject-cover img-top-focus" alt="Compression Brace">
+                <img src="images/bauerfeind.jpg" class="w-full h-full bject-cover img-top-focus" alt="Compression knee brace for ACL recovery and walking">
             </div>
             <h4 class="font-bold text-gray-900 mb-2">Compression Brace</h4>
-            <p class="text-sm text-gray-500 mb-6 flex-grow">Helps with proprioception and provides structural confidence during early outdoor walks. I didn’t use it daily, but it was very useful for travel, longer walks, or days with extended activity.</p>
+            <p class="text-sm text-gray-500 mb-6 flex-grow">
+                Helps with proprioception and provides confidence during early outdoor walks.
+                I did not use it daily, but it was extremely useful for travel, longer walks, or extended activity days.
+            </p>
             <div class="space-y-3 mt-auto">
                 <a href="https://amzn.to/4sWCNR9" target="blank" class="block w-full text-center py-3 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-google-blue transition-colors">Check on Amazon</a>
                 <a href="product/brace.html" class="block w-full text-center py-2 text-xs font-bold text-gray-400 hover:text-google-blue transition-colors">More details</a>
@@ -328,32 +432,44 @@ mobileLinks.forEach(link => {
         </div>
 
     </div>
+
     <p class="mt-6 text-xs text-gray-400">
-  As an Amazon Associate, I earn from qualifying purchases.
-</p>
+        As an Amazon Associate, I earn from qualifying purchases.
+    </p>
 
 </section>
 
-            <section id="travel" class="scroll-mt-24">
-    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-8 flex items-center">
+
+    <section id="travel" class="scroll-mt-24">
+    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-4 flex items-center">
         <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">03</span>
-        Traveling Strategy
+        Traveling After ACL & Meniscus Surgery
     </h2>
+
+    <p class="text-gray-500 mb-8 max-w-3xl">
+        Traveling after ACL reconstruction or meniscus surgery requires planning.
+        Flights, long car rides, and sightseeing all increase swelling and DVT risk if you are not prepared.
+        This is the exact strategy I used to travel safely while protecting my knee.
+    </p>
 
     <div class="space-y-8">
         <div class="bg-blue-50 border border-blue-100 p-6 rounded-3xl">
             <h4 class="font-bold text-google-blue mb-2 flex items-center">
-                 The 6-Week Rule
+                The 6-Week Rule for Flying
             </h4>
             <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-              Surgeons generally recommend waiting around <strong>6 weeks</strong> before long-haul flights to reduce the risk of DVT (blood clots).
-              In my case, I was on the move earlier than that: at 2 weeks post-op I did a short car trip (about 2 hours);
-              at <strong>week 4</strong> I took two long-haul flights back-to-back; and between <strong>weeks 4 and 8</strong> I was traveling continuously,
-              sightseeing, walking a lot, and, honestly, abusing my knee more than I should have.
-              None of this was done casually: every trip was <strong>cleared by my doctor</strong>, I used <strong>prescribed blood thinners</strong>,
-              wore <strong>compression socks</strong>, moved frequently, and monitored swelling and pain closely.
+                Surgeons generally recommend waiting around <strong>6 weeks</strong> before long-haul flights after ACL or meniscus surgery
+                to reduce the risk of <strong>DVT (blood clots)</strong>.
+                In my case, I was on the move earlier than that: at 2 weeks post-op I did a short car trip (about 2 hours);
+                at <strong>week 4</strong> I took two long-haul flights back-to-back; and between <strong>weeks 4 and 8</strong> I was traveling continuously,
+                sightseeing and walking a lot.
+                None of this was done casually. Every trip was <strong>cleared by my doctor</strong>,
+                I used <strong>prescribed blood thinners</strong>,
+                wore <strong>compression socks</strong>,
+                moved frequently, and monitored swelling closely.
+                I track how my knee reacted to travel days in my
+                <a href="index.html" class="underline decoration-gray-300 hover:decoration-blue-400">recovery timeline</a>.
             </p>
-
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -361,20 +477,20 @@ mobileLinks.forEach(link => {
             <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col justify-between">
                 <div>
                     <div class="flex items-center mb-6">
-                        <h4 class="font-bold text-gray-900 text-lg">Air Travel</h4>
+                        <h4 class="font-bold text-gray-900 text-lg">Air Travel Tips</h4>
                     </div>
                     <ul class="space-y-4 text-sm md:text-base text-gray-600">
                         <li class="flex items-start">
                             <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">1</span>
-                            <span><strong>Seat Choice:</strong> Book 1st row (bulkhead) or an aisle seat. You must be able to stretch the leg fully.</span>
+                            <span><strong>Seat Choice:</strong> Book a bulkhead or aisle seat so you can fully extend the operated leg during the flight.</span>
                         </li>
                         <li class="flex items-start">
                             <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">2</span>
-                            <span><strong>Elevation:</strong> Use a carry-on or inflatable pillow under your foot during the flight.</span>
+                            <span><strong>Elevation:</strong> Use a carry-on bag or inflatable pillow under your foot to reduce swelling.</span>
                         </li>
                         <li class="flex items-start">
                             <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">3</span>
-                            <span><strong>Wheelchair Service:</strong> Essential. Save your knee for the destination, not the airport terminal.</span>
+                            <span><strong>Wheelchair Service:</strong> Essential. Save your knee for the destination, not airport terminals.</span>
                         </li>
                     </ul>
                 </div>
@@ -383,20 +499,20 @@ mobileLinks.forEach(link => {
             <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col justify-between">
                 <div>
                     <div class="flex items-center mb-6">
-                        <h4 class="font-bold text-gray-900 text-lg">Car Travel</h4>
+                        <h4 class="font-bold text-gray-900 text-lg">Car Travel Tips</h4>
                     </div>
                     <ul class="space-y-4 text-sm md:text-base text-gray-600">
                         <li class="flex items-start">
                             <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">1</span>
-                            <span><strong>Position:</strong> Sit in the back seat. Stretch the operated leg horizontally across the seat bench.</span>
+                            <span><strong>Position:</strong> Sit in the back seat and stretch the operated leg across the seat to avoid knee flexion.</span>
                         </li>
                         <li class="flex items-start">
                             <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">2</span>
-                            <span><strong>Frequency:</strong> Stop every 45-60 minutes. Get out, walk, and perform 10 ankle pumps.</span>
+                            <span><strong>Frequency:</strong> Stop every 45–60 minutes to walk briefly and perform ankle pumps.</span>
                         </li>
                         <li class="flex items-start">
                             <span class="h-5 w-5 bg-blue-50 text-google-blue rounded-full flex items-center justify-center text-[10px] mr-3 mt-1 flex-shrink-0">3</span>
-                            <span><strong>Ice:</strong> Pack a portable cooler with ice packs for immediate relief upon arrival.</span>
+                            <span><strong>Ice:</strong> Pack ice packs or a cooler so swelling can be addressed immediately on arrival.</span>
                         </li>
                     </ul>
                 </div>
@@ -405,64 +521,79 @@ mobileLinks.forEach(link => {
 
         <div class="bg-gray-50 border border-gray-100 p-6 md:p-10 rounded-3xl">
             <h4 class="text-xl font-bold text-gray-900 mb-8 flex items-center">
-                    Sightseeing & Pacing
+                Sightseeing, Walking & Pacing
             </h4>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div class="space-y-2">
                     <p class="font-bold text-google-blue text-xs uppercase tracking-widest">Support</p>
-                    <p class="text-sm text-gray-600 leading-relaxed">Wear your compression brace. It provides the "structural confidence" needed for uneven surfaces or long museum halls.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Wear a compression brace for uneven ground and long walks.
+                        It adds proprioception and confidence when the knee is fatigued.
+                        I list the braces I used in the
+                        <a href="tips.html#equipment" class="underline decoration-gray-300 hover:decoration-blue-400">equipment section</a>.
+                    </p>
                 </div>
                 <div class="space-y-2">
                     <p class="font-bold text-google-blue text-xs uppercase tracking-widest">Hydration</p>
-                    <p class="text-sm text-gray-600 leading-relaxed">Travel causes inflammation. Drink 2x more water than usual and keep salt intake low to prevent the joint from filling with fluid.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Travel increases inflammation.
+                        Drink significantly more water than usual and limit salt to prevent fluid buildup in the knee joint.
+                    </p>
                 </div>
                 <div class="space-y-2">
-                    <p class="font-bold text-google-blue text-xs uppercase tracking-widest">The "Stop" Rule</p>
-                    <p class="text-sm text-gray-600 leading-relaxed">If the knee starts to throb or feel "full," your day is over. Pushing through leads to 48 hours of setback.</p>
+                    <p class="font-bold text-google-blue text-xs uppercase tracking-widest">The Stop Rule</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        If the knee starts to throb or feel heavy and full, your day is done.
+                        Ignoring this signal often leads to 24–48 hours of swelling setback.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-            <section id="dovsdont" class="scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center">
-                    <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">04</span>
-                    Do vs Don't
-                </h2>
-                <div class="grid md:grid-cols-2 gap-8">
 
-                    <div class="bg-green-50 p-8 rounded-3xl">
-                    <h3 class="text-xl font-black text-green-900 mb-4 uppercase tracking-tight">The Do's</h3>
-                    <ul class="space-y-3 text-green-800 text-sm">
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do protect extension from day one, everything builds on it.</li>
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do treat swelling management as a daily discipline.</li>
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do move often, even on rest days (circulation matters).</li>
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do respect fatigue, physical and mental.</li>
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do track progress in small metrics: degrees, control, confidence.</li>
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do plan recovery with the same intention as training.</li>
-                      <li class="flex items-start"><span class="mr-2">✓</span> Do stay consistent. Boring rehab done daily beats heroic effort.</li>
-                    </ul>
-                  </div>
+          <section id="dovsdont" class="scroll-mt-24">
+    <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center">
+        <span class="w-8 h-8 bg-blue-100 text-google-blue rounded-lg flex items-center justify-center mr-3 text-lg">04</span>
+        ACL & Meniscus Recovery Do vs Don't
+    </h2>
 
+    <p class="text-gray-500 mb-8 max-w-3xl">
+        If you are wondering what to do and what to avoid after ACL reconstruction or meniscus surgery, this is the short version.
+        These are the habits that protected my knee, reduced swelling, and kept progress moving forward without setbacks.
+    </p>
 
-                  <div class="bg-red-50 p-8 rounded-3xl">
-                    <h3 class="text-xl font-black text-red-900 mb-4 uppercase tracking-tight">The Don'ts</h3>
-                    <ul class="space-y-3 text-red-800 text-sm">
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't put a pillow directly under the knee (it kills extension).</li>
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't chase pain-free days as proof you’re “ready”.</li>
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't ignore swelling, it’s often more important than pain.</li>
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't stack hard days (walking, travel, training) without recovery.</li>
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't rush flexion at the expense of extension.</li>
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't skip basics because they feel “too easy”.</li>
-                      <li class="flex items-start"><span class="mr-2">✕</span> Don't assume pushing harder always speeds things up, it often slows them down.</li>
-                    </ul>
-                  </div>
+    <div class="grid md:grid-cols-2 gap-8">
 
-                 
-                </div>
+        <div class="bg-green-50 p-8 rounded-3xl">
+            <h3 class="text-xl font-black text-green-900 mb-4 uppercase tracking-tight">The Do's</h3>
+            <ul class="space-y-3 text-green-800 text-sm">
+                <li class="flex items-start"><span class="mr-2">✓</span> Do protect extension from day one. Everything builds on full knee extension.</li>
+                <li class="flex items-start"><span class="mr-2">✓</span> Do treat swelling control as a daily discipline, not an occasional fix.</li>
+                <li class="flex items-start"><span class="mr-2">✓</span> Do move often, even on rest days. Circulation supports recovery.</li>
+                <li class="flex items-start"><span class="mr-2">✓</span> Do respect fatigue, physical and mental. Rehab progress depends on recovery.</li>
+                <li class="flex items-start"><span class="mr-2">✓</span> Do track small metrics: range of motion, control, swelling, and confidence.</li>
+                <li class="flex items-start"><span class="mr-2">✓</span> Do plan recovery with the same intention you would plan training.</li>
+                <li class="flex items-start"><span class="mr-2">✓</span> Do stay consistent. Boring rehab done daily beats heroic effort once a week.</li>
+            </ul>
+        </div>
 
-            </section>
+        <div class="bg-red-50 p-8 rounded-3xl">
+            <h3 class="text-xl font-black text-red-900 mb-4 uppercase tracking-tight">The Don'ts</h3>
+            <ul class="space-y-3 text-red-800 text-sm">
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't put a pillow directly under the knee. It keeps the knee bent and can kill extension.</li>
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't chase pain-free days as proof you are ready for more load.</li>
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't ignore swelling. After ACL and meniscus surgery, swelling is often a better warning sign than pain.</li>
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't stack hard days (walking, travel, training) without a recovery buffer.</li>
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't rush flexion at the expense of extension. Extension is the foundation.</li>
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't skip basics because they feel too easy. The basics are what rebuild function.</li>
+                <li class="flex items-start"><span class="mr-2">✕</span> Don't assume pushing harder always speeds things up. Overdoing it often creates setbacks.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
         </div>
     </main>
