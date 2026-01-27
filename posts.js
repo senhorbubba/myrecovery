@@ -1,5 +1,115 @@
 const posts = [
    {
+        tag: "Week 10",
+        date: "Jan 25, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 70: Movement, Comfort, and Overindulgence",
+        description: "A strong physical start gave way to a slow, comfortable Sunday rhythm. Gym work and improved flexion felt encouraging, while rest, family time, and the pool helped the knee loosen up. The day drifted off course with food and wine again, leaving the familiar feeling of heaviness and a clear intention to reset tomorrow.",
+        image: "images/Day70.jpg",
+        link: "posts/day-70.html"
+    },
+   {
+        tag: "Week 10",
+        date: "Jan 24, 2026",
+        pain: "4/10",
+        swelling: "4/10",
+        title: "Day 69: Indulgence and Maintenance",
+        description: "A slow, heavy day shaped more by food, social life, and fatigue than by recovery ambition. Training took a back seat, but basic maintenance stayed in place. Not a step forward, not a step back. A reminder that recovery also has days where the goal is simply not to lose ground.",
+        image: "images/Day69.jpg",
+        link: "posts/day-69.html"
+    },
+   {
+        tag: "Week 10",
+        date: "Jan 23, 2026",
+        pain: "4/10",
+        swelling: "4/10",
+        title: "Day 68: Friction, Fatigue, and a Breakthrough",
+        description: "A demanding day that started fast and stayed heavy, both physically and mentally. The knee resisted load early, fatigue lingered throughout, but the day ended with a major win in flexion. One of those days where progress shows up only at the very end.",
+        image: "images/Day68.jpg",
+        link: "posts/day-68.html"
+    },
+   {
+        tag: "Week 10",
+        date: "Jan 22, 2026",
+        pain: "4/10",
+        swelling: "4/10",
+        title: "Day 67: Listening to Signals, Returning to Basics",
+        description: "A full, ordinary day that quietly tested patience. School routines returned, work flowed, but knee signals demanded attention. Instead of pushing, I chose maintenance and recovery, a reminder that progress also means knowing when to slow down.",
+        image: "images/Day67.jpg",
+        link: "posts/day-67.html"
+    },
+   {
+        tag: "Week 10",
+        date: "Jan 21, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 66: Signals, Adjustments, and Resetting the Frame",
+        description: "A slow, heavy start followed by cautious progress and necessary adjustments. The knee sent mixed signals today, reminding me that pushing forward also means knowing when to recalibrate. Routine is returning, and with it, a sense of structure and relief.",
+        image: "images/Day66.jpg",
+        link: "posts/day-66.html"
+    },
+   {
+        tag: "Week 10",
+        date: "Jan 20, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 65: Fatigue, Friction, and Holding the Line",
+        description: "A mentally heavy day where energy dipped and the knee pushed back. Work, family logistics, and fatigue collided, leaving little space for recovery until late. Progress felt less obvious today, but discipline showed up anyway.",
+        image: "images/Day65.jpg",
+        link: "posts/day-65.html"
+    }, 
+   {
+        tag: "Week 10",
+        date: "Jan 19, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 64: Weak Links and Familiar Rituals",
+        description: "A workday tested consistency and time management, pushing recovery into short windows around obligations. Training highlighted where weakness still shifts load to tendons, but improved flexion closed the day on a positive note. Less ice needed now, though the ritual still carries meaning.",
+        image: "images/Day64.jpg",
+        link: "posts/day-64.html"
+    },  
+   {
+        tag: "Week 10",
+        date: "Jan 18, 2026",
+        pain: "4/10",
+        swelling: "4/10",
+        title: "Day 63: Compensation and Consequences",
+        description: "A slightly better morning quickly turned into a lesson in compensation and limits. Movement helped unlock stiffness, but standing, social time, and skipped recovery sessions showed their cost. The body made it clear that rest is still an active part of progress.",
+        image: "images/Day63.jpg",
+        link: "posts/day-63.html"
+    },
+   {
+        tag: "Week 9",
+        date: "Jan 17, 2026",
+        pain: "4/10",
+        swelling: "4/10",
+        title: "Day 62: Quiet Progress, Real Life Balance",
+        description: "An early, quiet morning set a productive tone, followed by a return to routine, family time, and gym work. Flexion remains the main challenge, but progress is visible. The day balanced recovery discipline with real life, including an overdue night out.",
+        image: "images/Day62.jpg",
+        link: "posts/day-62.html"
+    },
+       {
+        tag: "Week 9",
+        date: "Jan 16, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 61: Confidence Grows, Control Matters",
+        description: "Mobility is improving and daily walking feels easier, but confidence brings new risks. A more demanding physio session introduced controlled pain, visible swelling, and a reminder that strength still lags behind ambition.",
+        image: "images/Day61.jpg",
+        link: "posts/day-61.html"
+    },
+       {
+        tag: "Week 9",
+        date: "Jan 15, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 60: Strength Returning, Attention Required",
+        description: "Sleep is improving, training is expanding, and daily life feels more normal again. The knee allows more, but weakness and fatigue still demand focus and intention with every step.",
+        image: "images/Day60.jpg",
+        link: "posts/day-60.html"
+    }, 
+   {
         tag: "Week 9",
         date: "Jan 14, 2026",
         pain: "4/10",
@@ -286,7 +396,7 @@ const posts = [
         swelling: "5/10",
         title: "Day 32: Survival Mode, Activated",
         description: "A long-haul travel day that tested endurance more than the knee itself. Smart improvisation helped manage stiffness, while swelling remained present but controlled. Exhaustion dominated, with recovery taking priority the moment we landed.",
-        image: "images/Day32.jpg",
+        image: "images/Day32-elevation-pillow-leg-above-heart.jpg",
         link: "posts/day-32.html"
     },
     {
@@ -475,7 +585,7 @@ const posts = [
         pain: "4/10",
         swelling: "5/10",
         title: "Day 13: Doing It Yourself",
-        description: "Without physio scheduled, Day 13 required self-discipline. Exercises were improvised around family life, heat increased swelling, and restraint became the challenge — no pool, no alcohol, and constant attention to food choices.",
+        description: "Without physio scheduled, Day 13 required self-discipline. Exercises were improvised around family life, heat increased swelling, and restraint became the challenge - no pool, no alcohol, and constant attention to food choices.",
         image: "images/Day13.jpg",
         link: "posts/day-13.html"
     },
