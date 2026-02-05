@@ -1,5 +1,85 @@
 const posts = [
    {
+        tag: "Week 12",
+        date: "Feb 2, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 78: Momentum",
+        description: "A slow, restorative Sunday with light movement and plenty of rest. Gentle pool work helped loosen the knee without stress, and a full day at home allowed it to settle. Less load, more calm, and the knee responded with a noticeably better feel.",
+        image: "images/Day77.jpg",
+        link: "posts/day-77.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Feb 1, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 77: Gentle Wins",
+        description: "A slow, restorative Sunday with light movement and plenty of rest. Gentle pool work helped loosen the knee without stress, and a full day at home allowed it to settle. Less load, more calm, and the knee responded with a noticeably better feel.",
+        image: "images/Day77.jpg",
+        link: "posts/day-77.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Jan 31, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 76: Small Signs, Long Day",
+        description: "A full and active day with encouraging signs of quad activation and steady flexion work. Training volume was higher but controlled, mixing gym work, pool time, walking, and family logistics. Fatigue showed up by the end, yet the knee kept cooperating.",
+        image: "images/Day76.jpg",
+        link: "posts/day-76.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Jan 30, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 75: Active Rest, Clearer Head",
+        description: "A calmer, better-balanced day where rest and light activity worked together. Flexion felt smoother, the knee reacted well to reduced load, and a short swim added gentle cardio without backlash. Less pressure, more listening, and the knee responded positively.",
+        image: "images/Day75.jpg",
+        link: "posts/day-75.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Jan 29, 2026",
+        pain: "4/10",
+        swelling: "3/10",
+        title: "Day 74: Progress That Bites Back",
+        description: "A physically demanding day that exposed the cost of pushing a bit too hard the day before. The knee felt stiff and heavy, with muscle fatigue showing up during longer walks. Training stayed controlled and protective, yet flexion still reached a new milestone at 138 degrees, even as pain remains the main limiter.",
+        image: "images/Day74.jpg",
+        link: "posts/day-74.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Jan 28, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 73: Adjustments and Reassurance",
+        description: "A slightly stiffer day, but with less visible swelling and reassurance that recent weight changes and lab results are normal post-surgery responses.",
+        image: "images/Day73.jpg",
+        link: "posts/day-73.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Jan 27, 2026",
+        pain: "2/10",
+        swelling: "3/10",
+        title: "Day 72: Lighter Steps, Quiet Confidence",
+        description: "The knee felt noticeably better today, lighter and easier to live with. A short morning flexion session and the mobility work from yesterday seem to be paying off. Sitting, driving, and moving through the day felt smoother, allowing for extra activation work at night without pushing too hard.",
+        image: "images/Day72.jpg",
+        link: "posts/day-72.html"
+    },
+   {
+        tag: "Week 11",
+        date: "Jan 26, 2026",
+        pain: "3/10",
+        swelling: "4/10",
+        title: "Day 71: Lighter Steps, Heavier Thoughts",
+        description: "A low-intensity day marked by stiffness and warmth in the knee. A mobility-focused physio session improved how the knee felt and made walking lighter. Weight is stabilizing, but fitness and body composition remain open questions.",
+        image: "images/Day71.jpg",
+        link: "posts/day-71.html"
+    },
+   {
         tag: "Week 10",
         date: "Jan 25, 2026",
         pain: "3/10",
