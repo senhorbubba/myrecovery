@@ -5,9 +5,9 @@ const posts = [
         pain: "2/10",
         swelling: "2/10",
         title: "Day 78: Momentum",
-        description: "A slow, restorative Sunday with light movement and plenty of rest. Gentle pool work helped loosen the knee without stress, and a full day at home allowed it to settle. Less load, more calm, and the knee responded with a noticeably better feel.",
-        image: "images/Day77.jpg",
-        link: "posts/day-77.html"
+        description: "A motivating day both mentally and physically. Conversations about business mirrored the recovery mindset, adapt, adjust, keep going. The knee felt good, tolerated more load, and flexion reached 140 degrees, reinforcing that progress is real and building.",
+        image: "images/Day78.jpg",
+        link: "posts/day-78.html"
     },
    {
         tag: "Week 11",
