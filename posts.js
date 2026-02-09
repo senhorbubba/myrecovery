@@ -1,6 +1,66 @@
 const posts = [
    {
         tag: "Week 12",
+        date: "Feb 8, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 84: Fragile Confidence",
+        description: "A physically better morning brought some relief, but reduced flexion triggered anxiety about losing ground after a few unfocused days. Training volume was high and manageable, yet recovery habits slipped again. A reminder surfaced: healing still requires patience and structure.",
+        image: "images/Day84.jpg",
+        link: "posts/day-84.html"
+    },
+   {
+        tag: "Week 12",
+        date: "Feb 7, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 83: Pushing for Normal",
+        description: "An active, family-centered day that pushed the knee beyond its comfort zone. Walking and repeated activity aggravated symptoms, while emotional needs outweighed caution.",
+        image: "images/Day83.jpg",
+        link: "posts/day-83.html"
+    },
+   {
+        tag: "Week 12",
+        date: "Feb 6, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 82: Mixed Signals",
+        description: "Despite little sleep, the knee felt better today. An unexpected schedule change allowed for a morning physio session that improved mobility, while differing opinions on when to start running introduced some uncertainty.",
+        image: "images/Day82.jpg",
+        link: "posts/day-82.html"
+    },
+   {
+        tag: "Week 12",
+        date: "Feb 5, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 81: Friction",
+        description: "A tougher day marked by morning stiffness, patellar pain, and low energy. Poor sleep clearly affected focus and productivity, while a short, focused gym session helped reset both body and mind. Progress continues, but recovery remains sensitive to habits.",
+        image: "images/Day81.jpg",
+        link: "posts/day-81.html"
+    },
+   {
+        tag: "Week 12",
+        date: "Feb 4, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 80: Testing the Waters",
+        description: "A lighter day overall, both in movement and sensation. Rest seems to translate into easier mornings, while physio introduced new loading tests that showed progress but also clear limits. Flexion reached 142°, closing in on the next milestone.",
+        image: "images/Day80.jpg",
+        link: "posts/day-80.html"
+    },
+   {
+        tag: "Week 12",
+        date: "Feb 3, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 79: Quiet Adjustments",
+        description: "A quieter day with more stiffness in the morning but gradual loosening throughout the day. Movement still brings relief, while longer periods sitting continue to feel awkward. Small, steady progress despite low intensity.",
+        image: "images/Day79.jpg",
+        link: "posts/day-79.html"
+    },
+   {
+        tag: "Week 12",
         date: "Feb 2, 2026",
         pain: "2/10",
         swelling: "2/10",
