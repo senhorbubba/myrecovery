@@ -1,7 +1,7 @@
 const posts = [
  {
         tag: "Semana 14",
-        date: "Feb 22, 2026",
+        date: "Feb 21, 2026",
         pain: "3/10",
         swelling: "3/10",
         title: "Day 97: Two Steps Forward, One Step Back",
