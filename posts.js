@@ -1,4 +1,134 @@
 const posts = [
+ {
+        tag: "Semana 14",
+        date: "Feb 22, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 97: Two Steps Forward, One Step Back",
+        description: "Better sleep helped, but pain returned with training and walking. A day that highlighted the emotional difficulty of inconsistent recovery and the patience it still demands.",
+        image: "images/Day97.jpg",
+        link: "posts/day-97.html"
+    },
+   {
+        tag: "Semana 14",
+        date: "Feb 20, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 96: Fatigue and Friction",
+        description: "A tired body and a stubborn knee shaped the day. Effort was there, discipline showed up early, but pain and lack of sleep weighed heavily, testing patience and mood.",
+        image: "images/Day96.jpg",
+        link: "posts/day-96.html"
+    },
+   {
+        tag: "Semana 14",
+        date: "Feb 19, 2026",
+        pain: "3/10",
+        swelling: "2/10",
+        title: "Day 95: Between Control and Temptation",
+        description: "A day marked by early discipline, creeping doubts, and a familiar internal battle. Physical strength returned during training, but mental resilience was tested later.",
+        image: "images/Day95.jpg",
+        link: "posts/day-95.html"
+    },
+   {
+        tag: "Semana 14",
+        date: "Feb 18, 2026",
+        pain: "3/10",
+        swelling: "2/10",
+        title: "Day 94: Perspective in Motion",
+        description: "A travel day that turned into a lesson in perspective. Art, nature, and stillness shifted the focus away from the knee, even as new sensations reminded me that recovery continues to evolve.",
+        image: "images/Day94.jpg",
+        link: "posts/day-94.html"
+    },
+   {
+        tag: "Semana 14",
+        date: "Feb 17, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 93: Light, Grounded, Together Again",
+        description: "A calm and grateful day marked by better sleep, lighter choices, and the return of family balance. The knee responded well, and the mind felt clear and optimistic.",
+        image: "images/Day93.jpg",
+        link: "posts/day-93.html"
+    },
+   {
+        tag: "Semana 14",
+        date: "Feb 16, 2026",
+        pain: "2/10",
+        swelling: "3/10",
+        title: "Day 92: Out of the Dark Pla",
+        description: "A reflective travel day that made one thing clear: the worst is behind. Physical limits are still present, but so is freedom. Movement, restraint, and perspective defined the day.",
+        image: "images/Day92.jpg",
+        link: "posts/day-92.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "Feb 15, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 91: Balance and Consequences",
+        description: "A social and active day filled with movement, sun, and joy, followed by a clear reminder that recovery also reacts to choices beyond exercise. The body gives fast feedback now, and it’s honest.",
+        image: "images/Day91.jpg",
+        link: "posts/day-91.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "Feb 14, 2026",
+        pain: "2/10",
+        swelling: "3/10",
+        title: "Day 90: Strong Start, Gentle Pause",
+        description: "A physically active but emotionally calm day. Strength, movement, travel, and rest came together in balance, with a clear sense that recovery also needs space, warmth, and moments of celebration.",
+        image: "images/Day90.jpg",
+        link: "posts/day-90.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "Feb 13, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 89: Lightness After the Load",
+        description: "An unexpectedly light morning after a heavy rehab day. Physical ease contrasted with mental stress, balanced by movement, family time, and a reminder that recovery still demands restraint.",
+        image: "images/Day89.jpg",
+        link: "posts/day-89.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "Feb 12, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 88: Closer to the Court",
+        description: "An intense but motivating day. Less time for volume outside therapy, but a long, demanding session brought physical fatigue, emotional lift, and a clear step closer to the real goal.",
+        image: "images/Day88.jpg",
+        link: "posts/day-88.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "Feb 11, 2026",
+        pain: "3/10",
+        swelling: "2/10",
+        title: "Day 87: Compression",
+        description: "A compressed day dominated by sitting, time pressure, and a short but intense physiotherapy session. Less volume, more discomfort, but clear signs that flexion is still moving forward.",
+        image: "images/Day87.jpg",
+        link: "posts/day-87.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "10 Feb 10, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 86: Quiet Strength",
+        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night — the kind that reminds you what training used to feel like.",
+        image: "images/Day86.jpg",
+        link: "posts/day-86.html"
+    },
+   {
+        tag: "Semana 13",
+        date: "Feb 9, 2026",
+        pain: "3/10",
+        swelling: "3/10",
+        title: "Day 85: Between Doubt and Proof",
+        description: "A day that started uncertain and emotionally heavy ended with an unexpected reminder: progress doesn’t always feel like progress. Frustration dominated the middle, but numbers and perspective quietly told a different story.",
+        image: "images/Day85.jpg",
+        link: "posts/day-85.html"
+    },
    {
         tag: "Week 12",
         date: "Feb 8, 2026",
