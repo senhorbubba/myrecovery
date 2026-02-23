@@ -115,7 +115,7 @@ const posts = [
         pain: "3/10",
         swelling: "3/10",
         title: "Day 86: Quiet Strength",
-        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night — the kind that reminds you what training used to feel like.",
+        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night - the kind that reminds you what training used to feel like.",
         image: "images/Day86.jpg",
         link: "posts/day-86.html"
     },
