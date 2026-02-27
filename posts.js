@@ -1,6 +1,46 @@
 const posts = [
  {
-        tag: "Semana 14",
+        tag: "Week 15",
+        date: "Feb 24, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "100 Days Later: What the Knee Taught Me",
+        description: "One hundred days of recovery distilled into clarity. Pain, doubt, small victories, setbacks, discipline, and perspective reshaped how I understand healing. Progress came not from heroic moments, but from repetition, patience, and restraint. Mobility beat strength. Sleep beat motivation. Swelling told the truth. Alcohol lied. The body healed slowly, the mind learned faster, and consistency quietly did the heavy lifting. I’m not back yet, but I’m no longer lost. And that might be the most important milestone so far.",
+        image: "images/Day100S.jpg",
+        link: "posts/day-100S.html"
+    },
+ {
+        tag: "Week 15",
+        date: "Feb 24, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 100: A Quiet Celebration",
+        description: "One hundred days after surgery. Not a finish line, but a meaningful milestone. A day marked by calm progress, small functional wins, reflection, and a conscious choice to celebrate discipline over impulse.",
+        image: "images/Day100.jpg",
+        link: "posts/day-100.html"
+    },
+ {
+        tag: "Week 15",
+        date: "Feb 23, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 99: Back to the Basics",
+        description: "A tired and irritable day shaped by poor sleep and stiffness, but also by the return to routine. Physiotherapy brought clarity, relief, and a reminder that fundamentals still matter most.",
+        image: "images/Day99.jpg",
+        link: "posts/day-99.html"
+    },
+ {
+        tag: "Week 14",
+        date: "Feb 22, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 98: Two Steps Forward, One Step Back",
+        description: "A slow and restorative Sunday after intense travel days. Less pressure, more awareness. Physical recovery, mental calm, and small signs of progress came together to reset both body and mindset.",
+        image: "images/Day98.jpg",
+        link: "posts/day-98.html"
+    },
+ {
+        tag: "Week 14",
         date: "Feb 21, 2026",
         pain: "3/10",
         swelling: "3/10",
@@ -10,7 +50,7 @@ const posts = [
         link: "posts/day-97.html"
     },
    {
-        tag: "Semana 14",
+        tag: "Week 14",
         date: "Feb 20, 2026",
         pain: "3/10",
         swelling: "3/10",
@@ -20,7 +60,7 @@ const posts = [
         link: "posts/day-96.html"
     },
    {
-        tag: "Semana 14",
+        tag: "Week 14",
         date: "Feb 19, 2026",
         pain: "3/10",
         swelling: "2/10",
@@ -30,7 +70,7 @@ const posts = [
         link: "posts/day-95.html"
     },
    {
-        tag: "Semana 14",
+        tag: "Week 14",
         date: "Feb 18, 2026",
         pain: "3/10",
         swelling: "2/10",
@@ -40,7 +80,7 @@ const posts = [
         link: "posts/day-94.html"
     },
    {
-        tag: "Semana 14",
+        tag: "Week 14",
         date: "Feb 17, 2026",
         pain: "2/10",
         swelling: "2/10",
@@ -50,7 +90,7 @@ const posts = [
         link: "posts/day-93.html"
     },
    {
-        tag: "Semana 14",
+        tag: "Week 14",
         date: "Feb 16, 2026",
         pain: "2/10",
         swelling: "3/10",
@@ -60,7 +100,7 @@ const posts = [
         link: "posts/day-92.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "Feb 15, 2026",
         pain: "2/10",
         swelling: "2/10",
@@ -70,7 +110,7 @@ const posts = [
         link: "posts/day-91.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "Feb 14, 2026",
         pain: "2/10",
         swelling: "3/10",
@@ -80,7 +120,7 @@ const posts = [
         link: "posts/day-90.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "Feb 13, 2026",
         pain: "2/10",
         swelling: "2/10",
@@ -90,7 +130,7 @@ const posts = [
         link: "posts/day-89.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "Feb 12, 2026",
         pain: "2/10",
         swelling: "2/10",
@@ -100,7 +140,7 @@ const posts = [
         link: "posts/day-88.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "Feb 11, 2026",
         pain: "3/10",
         swelling: "2/10",
@@ -110,17 +150,17 @@ const posts = [
         link: "posts/day-87.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "10 Feb 10, 2026",
         pain: "3/10",
         swelling: "3/10",
         title: "Day 86: Quiet Strength",
-        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night - the kind that reminds you what training used to feel like.",
+        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night — the kind that reminds you what training used to feel like.",
         image: "images/Day86.jpg",
         link: "posts/day-86.html"
     },
    {
-        tag: "Semana 13",
+        tag: "Week 13",
         date: "Feb 9, 2026",
         pain: "3/10",
         swelling: "3/10",
