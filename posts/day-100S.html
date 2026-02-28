@@ -39,12 +39,29 @@
             Knee<span class="google-blue">Comeback</span>
         </a>
 
-        <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-500">
-            <a href="../index.html" class="hover:text-blue-600">Timeline</a>
-            <a href="../exercises.html" class="hover:text-blue-600">Exercises</a>
-            <a href="../tips.html" class="hover:text-blue-600">Tips</a>
-            <a href="../about.html" class="hover:text-blue-600">About</a>
+        <div class="flex items-center">
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-500 mr-8">
+                <a href="../index.html" class="hover:text-blue-600 transition-colors">Timeline</a>
+                <a href="../exercises.html" class="hover:text-blue-600 transition-colors">Exercises</a>
+                <a href="../tips.html" class="hover:text-blue-600 transition-colors">Tips</a>
+                <a href="../about.html" class="hover:text-blue-600 transition-colors">About</a>
+            </div>
+
+            <div class="flex items-center space-x-4 border-l pl-4 border-gray-200">
+                <button id="menu-btn" class="md:hidden text-gray-500 focus:outline-none" aria-label="Toggle menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
         </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-5 py-6 space-y-4 shadow-xl">
+        <a href="../index.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Timeline</a>
+        <a href="../exercises.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Exercises</a>
+        <a href="../tips.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Tips</a>
+        <a href="../about.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">About</a>
     </div>
 </nav>
 
