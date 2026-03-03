@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 15",
+        date: "Feb 28, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 104: Active Recovery, Subtle Doubts",
+        description: "A productive and physically active day, despite a mild hangover. Movement was present from morning to evening, mostly around the kids and structured training. Energy returned gradually. The knee handled the load well, but walking still feels slightly unnatural — a quiet reminder that recovery isn’t fully complete. A healthy day overall, with discipline slowly reasserting itself.",
+        image: "images/Day104.jpg",
+        link: "posts/day-104.html"
+    },
+ {
+        tag: "Week 15",
         date: "Feb 27, 2026",
         pain: "2/10",
         swelling: "0/10",
