@@ -208,20 +208,7 @@
             loginBtn.textContent = 'Logging in...';
 
             try {
-                let res;
-                try {
-                    res = await fetch(window.location.origin + '/api/admin/login', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ password })
-                    });
-                    if (res.status === 405) {
-                        throw new Error('POST not allowed');
-                    }
-                } catch (postErr) {
-                    res = await fetch(window.location.origin + '/api/admin/login?p=' + encodeURIComponent(password));
-                }
-
+                const res = await fetch('/api/admin/login?p=' + encodeURIComponent(password));
                 const data = await res.json();
                 if (data.success) {
                     authToken = data.token;
@@ -345,9 +332,8 @@
             const formData = new FormData(form);
 
             try {
-                const res = await fetch(window.location.origin + '/api/admin/create-post', {
+                const res = await fetch('/api/admin/create-post?token=' + encodeURIComponent(authToken), {
                     method: 'POST',
-                    headers: { 'Authorization': 'Bearer ' + authToken },
                     body: formData
                 });
                 const data = await res.json();

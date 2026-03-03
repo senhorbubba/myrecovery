@@ -84,8 +84,15 @@ function sendJson(res, statusCode, data) {
 
 function checkAuth(req) {
   const authHeader = req.headers['authorization'];
-  if (!authHeader || !authHeader.startsWith('Bearer ')) return false;
-  return isValidSession(authHeader.slice(7));
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    return isValidSession(authHeader.slice(7));
+  }
+  const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
+  const tokenParam = url.searchParams.get('token');
+  if (tokenParam) {
+    return isValidSession(tokenParam);
+  }
+  return false;
 }
 
 function generatePostHtml(data) {
