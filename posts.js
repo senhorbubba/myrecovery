@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 15",
+        date: "Feb 25, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 101: Different Paths, Same Direction",
+        description: "A strong start to the day with physiotherapy set the tone. A different approach brought new confidence, less pain focus, and a clearer sense that progress can come through multiple paths, as long as the work is intentional.",
+        image: "images/Day101.jpg",
+        link: "posts/day-101.html"
+    },
+ {
+        tag: "Week 15",
         date: "Feb 24, 2026",
         pain: "2/10",
         swelling: "2/10",
