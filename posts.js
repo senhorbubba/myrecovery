@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 15",
+        date: "Feb 26, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 102: Productive Fatigue",
+        description: "A full day that balanced physical progress, mental engagement, and honest fatigue. Training, work, and social energy all stacked up, showing that recovery now includes learning how to manage load, not just increase it.",
+        image: "images/Day102.jpeg",
+        link: "posts/day-102.html"
+    },
+ {
+        tag: "Week 15",
         date: "Feb 25, 2026",
         pain: "2/10",
         swelling: "2/10",
