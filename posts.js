@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 15",
+        date: "Mar 1, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 105: Training the Body, Questioning the Mind",
+        description: "Strong physical energy, disciplined choices, and a subtle mental reflection. Training intensity is back. Nutrition is sharper. Social pressure didn’t derail discipline. Yet beneath the physical progress sits a new question: when the body is ready, will the mind be? Today felt strong, but also thoughtful.",
+        image: "images/Day105.jpg",
+        link: "posts/day-105.html"
+    },
+ {
+        tag: "Week 15",
         date: "Feb 28, 2026",
         pain: "1/10",
         swelling: "2/10",
