@@ -499,6 +499,8 @@ function handleGetExistingPosts(req, res) {
 }
 
 const server = http.createServer((req, res) => {
+  const urlPath = req.url.split('?')[0];
+
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -509,31 +511,54 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  if (req.method === 'POST' && req.url === '/api/admin/login') {
-    let body = '';
-    req.on('data', chunk => body += chunk);
-    req.on('end', () => {
-      try {
-        const { password } = JSON.parse(body);
-        if (password === ADMIN_PASSWORD) {
-          const token = createSession();
-          sendJson(res, 200, { success: true, token });
-        } else {
-          sendJson(res, 401, { error: 'Invalid password' });
+  if (urlPath.startsWith('/api/')) {
+    console.log(`[API] ${req.method} ${req.url}`);
+  }
+
+  if (urlPath === '/api/admin/login') {
+    if (req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        try {
+          const { password } = JSON.parse(body);
+          if (password === ADMIN_PASSWORD) {
+            const token = createSession();
+            sendJson(res, 200, { success: true, token });
+          } else {
+            sendJson(res, 401, { error: 'Invalid password' });
+          }
+        } catch (e) {
+          sendJson(res, 400, { error: 'Invalid request' });
         }
-      } catch (e) {
-        sendJson(res, 400, { error: 'Invalid request' });
+      });
+    } else if (req.method === 'GET') {
+      const url = new URL(req.url, `http://${req.headers.host}`);
+      const password = url.searchParams.get('p');
+      if (password && password === ADMIN_PASSWORD) {
+        const token = createSession();
+        sendJson(res, 200, { success: true, token });
+      } else {
+        sendJson(res, 401, { error: 'Invalid password' });
       }
-    });
+    } else {
+      sendJson(res, 405, { error: 'Method not allowed' });
+    }
     return;
   }
 
-  if (req.method === 'POST' && req.url === '/api/admin/create-post') {
+  if (req.method === 'POST' && urlPath === '/api/admin/create-post') {
     return handleCreatePost(req, res);
   }
 
-  if (req.method === 'GET' && req.url === '/api/admin/posts') {
+  if (req.method === 'GET' && urlPath === '/api/admin/posts') {
     return handleGetExistingPosts(req, res);
+  }
+
+  if (urlPath.startsWith('/api/')) {
+    res.writeHead(405, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: 'Method not allowed', method: req.method, url: req.url }));
+    return;
   }
 
   serveStatic(req, res);

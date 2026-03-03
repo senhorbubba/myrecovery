@@ -203,19 +203,23 @@
                 return;
             }
 
+            const loginBtn = document.getElementById('login-btn');
+            loginBtn.disabled = true;
+            loginBtn.textContent = 'Logging in...';
+
             try {
-                const loginBtn = document.getElementById('login-btn');
-                loginBtn.disabled = true;
-                loginBtn.textContent = 'Logging in...';
-
-                const res = await fetch(window.location.origin + '/api/admin/login', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ password })
-                });
-
-                if (!res.ok && res.status !== 401) {
-                    throw new Error('Server returned ' + res.status);
+                let res;
+                try {
+                    res = await fetch(window.location.origin + '/api/admin/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ password })
+                    });
+                    if (res.status === 405) {
+                        throw new Error('POST not allowed');
+                    }
+                } catch (postErr) {
+                    res = await fetch(window.location.origin + '/api/admin/login?p=' + encodeURIComponent(password));
                 }
 
                 const data = await res.json();
@@ -227,13 +231,10 @@
                     errorEl.textContent = data.error || 'Invalid password. Try again.';
                     errorEl.classList.remove('hidden');
                 }
-
-                loginBtn.disabled = false;
-                loginBtn.textContent = 'Log In';
             } catch (e) {
                 errorEl.textContent = 'Connection error: ' + e.message;
                 errorEl.classList.remove('hidden');
-                const loginBtn = document.getElementById('login-btn');
+            } finally {
                 loginBtn.disabled = false;
                 loginBtn.textContent = 'Log In';
             }
