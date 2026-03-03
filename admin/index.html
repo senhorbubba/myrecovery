@@ -195,25 +195,47 @@
         document.getElementById('login-btn').addEventListener('click', async () => {
             const password = document.getElementById('password-input').value;
             const errorEl = document.getElementById('login-error');
+            errorEl.classList.add('hidden');
+
+            if (!password) {
+                errorEl.textContent = 'Please enter a password.';
+                errorEl.classList.remove('hidden');
+                return;
+            }
 
             try {
-                const res = await fetch('/api/admin/login', {
+                const loginBtn = document.getElementById('login-btn');
+                loginBtn.disabled = true;
+                loginBtn.textContent = 'Logging in...';
+
+                const res = await fetch(window.location.origin + '/api/admin/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ password })
                 });
+
+                if (!res.ok && res.status !== 401) {
+                    throw new Error('Server returned ' + res.status);
+                }
+
                 const data = await res.json();
                 if (data.success) {
                     authToken = data.token;
                     sessionStorage.setItem('adminToken', authToken);
                     showAdmin();
                 } else {
-                    errorEl.textContent = 'Invalid password. Try again.';
+                    errorEl.textContent = data.error || 'Invalid password. Try again.';
                     errorEl.classList.remove('hidden');
                 }
+
+                loginBtn.disabled = false;
+                loginBtn.textContent = 'Log In';
             } catch (e) {
-                errorEl.textContent = 'Connection error. Try again.';
+                errorEl.textContent = 'Connection error: ' + e.message;
                 errorEl.classList.remove('hidden');
+                const loginBtn = document.getElementById('login-btn');
+                loginBtn.disabled = false;
+                loginBtn.textContent = 'Log In';
             }
         });
 
@@ -322,7 +344,7 @@
             const formData = new FormData(form);
 
             try {
-                const res = await fetch('/api/admin/create-post', {
+                const res = await fetch(window.location.origin + '/api/admin/create-post', {
                     method: 'POST',
                     headers: { 'Authorization': 'Bearer ' + authToken },
                     body: formData
