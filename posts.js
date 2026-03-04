@@ -1,25 +1,5 @@
 const posts = [
  {
-        tag: "Semana 15",
-        date: "28 Fev, 2026",
-        pain: "2/10",
-        swelling: "2/10",
-        title: "Dia 103: Ritmo Acelerado, Reset Forçado",
-        description: "Um dia que correu rápido demais e exigiu além da conta. O estresse foi se acumulando silenciosamente entre trabalho e falta de ritmo, mas um breve momento na quadra com as crianças mudou tudo. Trinta minutos de movimento restauraram o que horas de pressão drenaram. O joelho respondeu bem. A mente desacelerou. Hoje, a recuperação foi menos física e mais emocional.",
-        image: "images/Day103.jpg",
-        link: "posts/day-103.html"
-    },
- {
-        tag: "Semana 15",
-        date: "27 Feb, 2026",
-        pain: "1/10",
-        swelling: "2/10",
-        title: "Dia 102: Fadiga Produtiva",
-        description: "Um dia cheio que equilibrou avanço físico, envolvimento mental e cansaço honesto. Treino, trabalho e energia social se acumularam, mostrando que a recuperação agora também é aprender a gerenciar a carga, não apenas aumentá-la.",
-        image: "images/Day102.jpg",
-        link: "posts/day-102.html"
-    },
- {
         tag: "Week 15",
         date: "Mar 1, 2026",
         pain: "1/10",
