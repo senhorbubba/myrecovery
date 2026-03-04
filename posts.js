@@ -1,24 +1,5 @@
 const posts = [
- {
-        tag: "Week 15",
-        date: "Feb 27, 2026",
-        pain: "2/10",
-        swelling: "2/10",
-        title: "Day 103: Fast Pace, Forced Reset",
-        description: "A day that moved too fast and demanded too much. Stress built quietly through work and poor pacing, but a short moment on court with the kids shifted everything. Thirty minutes of movement restored what hours of pressure drained. The knee held. The mind softened. Recovery today was less physical and more emotional.",
-        image: "images/Day103.jpg",
-        link: "posts/day-103.html"
-    },
- {
-        tag: "Week 15",
-        date: "Feb 26, 2026",
-        pain: "1/10",
-        swelling: "2/10",
-        title: "Day 102: Productive Fatigue",
-        description: "A full day that balanced physical progress, mental engagement, and honest fatigue. Training, work, and social energy all stacked up, showing that recovery now includes learning how to manage load, not just increase it.",
-        image: "images/Day102.jpeg",
-        link: "posts/day-102.html"
-    },
+
  {
         tag: "Week 15",
         date: "Mar 1, 2026",
