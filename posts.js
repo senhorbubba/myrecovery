@@ -1,4 +1,14 @@
 const posts = [
+ {
+        tag: "Week 16",
+        date: "Mar 2, 2026",
+        pain: "4/10",
+        swelling: "3/10",
+        title: "Day 106: Halfway, and Reassured",
+        description: "A day marked by anticipation, reassurance, and an important checkpoint. The consultation confirmed that progress is real, even if recovery still carries imperfections. Swelling remains present, but the overall direction is right. Medical reassurance reduced many doubts that had been quietly building. The day ended with discomfort in the knee, but clarity in the mind.",
+        image: "images/Day106.jpg",
+        link: "posts/day-106.html"
+    },
 
  {
         tag: "Week 15",
