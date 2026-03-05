@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 16",
+        date: "Mar 3, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 107: Less Fluid, More Perspective",
+        description: "The day began with stiffness and local discomfort after yesterday’s procedure, but visible reduction in swelling brought reassurance. Physically, the knee required caution; mentally, the day opened space for reflection, especially around parenting, patience, and how recovery has quietly shaped family dynamics. A lighter rehab session closed the day with a sense of calm and control.",
+        image: "images/Day107.jpg",
+        link: "posts/day-107.html"
+    },
+ {
+        tag: "Week 16",
         date: "Mar 2, 2026",
         pain: "4/10",
         swelling: "3/10",
