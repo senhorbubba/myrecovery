@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 16",
+        date: "Mar 5, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 109: Running Returns",
+        description: "A day that combined productivity, recovery, and one important physical breakthrough. The knee felt more cooperative during rehab, patellar discomfort was lower, and for the first time in almost four months running returned, awkward and tiring, but possible. What lasted only a few minutes felt much bigger than the time itself.",
+        image: "images/Day109.jpg",
+        link: "posts/day-109.html"
+    },
+ {
+        tag: "Week 16",
         date: "Mar 4, 2026",
         pain: "1/10",
         swelling: "2/10",
