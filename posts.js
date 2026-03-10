@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 16",
+        date: "Mar 4, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 108: Lighter Knee, Lighter Mind",
+        description: "A day with better rhythm, lighter movement, and a calmer mind. The knee responded well after the injection, and mentally the day carried more ease than pressure. Small conversations and ordinary moments brought perspective again - especially the reminder that one year, when viewed from distance, is not long at all.",
+        image: "images/Day108.jpg",
+        link: "posts/day-108.html"
+    },
+ {
+        tag: "Week 16",
         date: "Mar 3, 2026",
         pain: "2/10",
         swelling: "2/10",
