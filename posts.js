@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 16",
+        date: "8 Mar, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 112: A Light Body, A Full Day",
+        description: "A day shaped by ease, sunlight, and the welcome feeling of physical normality. The knee responded exceptionally well, allowing movement without effort and bringing a sense of freedom that stood out throughout the day. Family, friends, water, and simple routines created one of those days where recovery felt less like work and more like life.",
+        image: "images/Day112.jpg",
+        link: "posts/day-112.html"
+    },
+ {
+        tag: "Week 16",
         date: "7 Mar, 2026",
         pain: "2/10",
         swelling: "2/10",
