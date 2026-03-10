@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 16",
+        date: "6 Mar, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 110: Productive Calm",
+        description: "A physically lighter day, but mentally very efficient. Without gym or physiotherapy, the rhythm shifted toward work, swimming, and family, with the body moving just enough to stay balanced. The knee felt slightly stiffer by evening, a small reminder that even quiet days still need attention.",
+        image: "images/Day110.jpg",
+        link: "posts/day-110.html"
+    },
+ {
+        tag: "Week 16",
         date: "Mar 5, 2026",
         pain: "2/10",
         swelling: "2/10",
