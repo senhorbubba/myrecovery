@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 17",
+        date: "12 Mar, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 116: Progress in Motion",
+        description: "The day carried a lighter physical feeling from the start, with the knee responding well and the body showing the effects of yesterday’s work in a positive way. It was another day of movement, commitments, and long periods standing, but this time with more confidence than fatigue. Conversations with people who had seen earlier stages of recovery made the progress feel visible in a different way.",
+        image: "images/Day116.jpg",
+        link: "posts/day-116.html"
+    },
+ {
+        tag: "Week 17",
         date: "11 Mar, 2026",
         pain: "2/10",
         swelling: "2/10",
