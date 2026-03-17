@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 17",
+        date: "14 Mar, 2026",
+        pain: "2/10",
+        swelling: "3/10",
+        title: "Day 118: Too Much Pace, Not Enough Recovery",
+        description: "The day carried the weight of poor sleep, travel fatigue, and more social energy than the body ideally wanted. The knee handled the trip better than before, which itself is progress, but the overall pace of the day eventually caught up with both body and mind. It was not a perfect recovery day, yet even within excess there was a clear sense of how much easier things are now compared with earlier stages.",
+        image: "images/Day118.jpg",
+        link: "posts/day-118.html"
+    },
+ {
+        tag: "Week 17",
         date: "13 Mar, 2026",
         pain: "1/10",
         swelling: "2/10",
