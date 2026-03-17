@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 17",
+        date: "13 Mar, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 117: Moving Again",
+        description: "A day built around movement in every sense: family rhythm, work pressure, training progression, and travel. The body worked hard in the morning, the mind stayed sharp through the day, and by the time the journey began there was a clear sense that this trip already felt different from the last one. Recovery is no longer defined by restriction, but by how naturally life starts fitting around it again.",
+        image: "images/Day117.jpg",
+        link: "posts/day-117.html"
+    },
+ {
+        tag: "Week 17",
         date: "12 Mar, 2026",
         pain: "1/10",
         swelling: "2/10",
