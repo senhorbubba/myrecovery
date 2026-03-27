@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 18",
+        date: "17 Mar, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 121: Strong Body, Familiar Patterns",
+        description: "A structured and productive day with solid physical work in the morning and steady focus through the afternoon. The body responded well, especially with more targeted lower body work, but the evening slipped into familiar social patterns of excess. Progress continues, even if balance is still being tested.",
+        image: "images/Day121.jpg",
+        link: "posts/day-121.html"
+    },
+ {
+        tag: "Week 18",
         date: "16 Mar, 2026",
         pain: "1/10",
         swelling: "2/10",
