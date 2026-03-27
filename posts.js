@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 18",
+        date: "22 Mar, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 126: Running on Empty",
+        description: "A day driven by exhaustion, poor sleep, and the physical cost of the previous days. Everything felt slower and heavier, both mentally and physically. The focus shifted to getting through the day rather than performing in it, with travel adding another layer of discomfort.",
+        image: "images/Day126.jpg",
+        link: "posts/day-126.html"
+    },
+ {
+        tag: "Week 18",
         date: "21 Mar, 2026",
         pain: "1/10",
         swelling: "2/10",
