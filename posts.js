@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 18",
+        date: "18 Mar, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 122: Long Day on the Move",
+        description: "A day shaped by movement, changes in plans, and long hours on the feet. Despite a rough start with less sleep, the day unfolded through travel, social moments, and unexpected adjustments. The knee held up overall but started to signal fatigue after extended standing and walking.",
+        image: "images/Day122.jpg",
+        link: "posts/day-122.html"
+    },
+ {
+        tag: "Week 18",
         date: "17 Mar, 2026",
         pain: "1/10",
         swelling: "1/10",
