@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 18",
+        date: "21 Mar, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 125: High Energy, No Signals",
+        description: "A day fueled by good sleep, strong social energy, and constant movement. Despite the intensity and excess, the knee stayed quiet throughout, which stood out more than anything else. The body paid the price overall, but the absence of knee discomfort brought a sense of confidence.",
+        image: "images/Day125.jpg",
+        link: "posts/day-125.html"
+    },
+ {
+        tag: "Week 18",
         date: "20 Mar, 2026",
         pain: "2/10",
         swelling: "2/10",
