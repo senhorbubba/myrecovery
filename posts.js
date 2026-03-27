@@ -1,5 +1,15 @@
 const posts = [
  {
+        tag: "Week 18",
+        date: "16 Mar, 2026",
+        pain: "1/10",
+        swelling: "2/10",
+        title: "Day 120: Slower Body, Easier Steps",
+        description: "The day began under the weight of fatigue, with the body clearly asking for less after several full days in a row. Energy stayed below normal, but the knee remained stable and quietly showed another sign of progress: walking is becoming easier and more natural, even on a day when everything else felt slower.",
+        image: "images/Day120.jpg",
+        link: "posts/day-120.html"
+    },
+ {
         tag: "Week 17",
         date: "15 Mar, 2026",
         pain: "1/10",
