@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 19",
+        date: "Mar 27, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 131: Stronger Body, Lingering Fear",
+        description: "A day that balanced family, work, and focused physical recovery. The knee felt better, pain no longer present, but the mental hesitation still remains. Training was structured and productive, while the evening again shifted into social intensity. Progress is clear physically, but confidence is still catching up.",
+        image: "images/Day131.jpg",
+        link: "posts/day-131.html"
+    },
+ {
+        tag: "Week 19",
         date: "Mar 26, 2026",
         pain: "2/10",
         swelling: "1/10",
