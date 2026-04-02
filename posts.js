@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 19",
+        date: "Mar 25, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 129: Settling Back In",
+        description: "A calmer day with a smoother family rhythm and gradual return to routine. Physically light, with a short home session instead of a full workout. The knee felt more stable compared to the previous days, although awareness of the earlier pain still lingered in the background.",
+        image: "images/Day129.jpg",
+        link: "posts/day-129.html"
+    },
+ {
+        tag: "Week 19",
         date: "Mar 24, 2026",
         pain: "2/10",
         swelling: "2/10",
