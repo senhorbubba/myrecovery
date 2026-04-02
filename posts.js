@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 19",
+        date: "Mar 26, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 130: Momentum and Distractions",
+        description: "A day that started with structure and intention but gradually became fragmented by small misses and shifting priorities. Work, conversations, and social moments filled the schedule, while discipline slipped slightly around recovery habits. The body kept up, but the rhythm was less controlled.",
+        image: "images/Day130.jpg",
+        link: "posts/day-130.html"
+    },
+ {
+        tag: "Week 19",
         date: "Mar 25, 2026",
         pain: "2/10",
         swelling: "1/10",
