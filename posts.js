@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 19",
+        date: "Mar 24, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 128: Between Signal and Thought",
+        description: "A quieter day shaped more by internal attention than physical activity. The body moved normally, but the mind stayed focused on the new sensation from yesterday. Fatigue from travel still lingers, and the balance between real signal and mental amplification remains unclear.",
+        image: "images/Day128.jpg",
+        link: "posts/day-128.html"
+    },
+ {
+        tag: "Week 19",
         date: "Mar 23, 2026",
         pain: "3/10",
         swelling: "2/10",
