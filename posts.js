@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 20",
+        date: "Apr 1, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 136: Simple Wins",
+        description: "A day built around routine, family logistics, and small moments of movement. No formal training, but the knee felt stable and reliable throughout. The strongest signal was not from exercise, but from how natural walking and everyday movement have become.",
+        image: "images/Day136.jpg",
+        link: "posts/day-136.html"
+    },
+ {
+        tag: "Week 20",
         date: "Mar 31, 2026",
         pain: "1/10",
         swelling: "1/10",
