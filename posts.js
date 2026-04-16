@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 20",
+        date: "Apr 3, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 139: Balance and Excess",
+        description: "A day that started with strong physical effort and continued with quality family time, following a rhythm that felt both productive and relaxed. Training was solid, recovery was supported, but the evening again drifted into excess. Progress remains steady, even as balance continues to be tested.",
+        image: "images/Day139.jpg",
+        link: "posts/day-139.html"
+    },
+ {
+        tag: "Week 20",
         date: "Apr 2, 2026",
         pain: "1/10",
         swelling: "1/10",
