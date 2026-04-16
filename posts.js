@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 20",
+        date: "Apr 5, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 140: Letting It Be Easy",
+        description: "A calm Easter Sunday with no pressure to perform and no need to follow structure. The day was centered around family, rest, and simple routines. The body felt the fatigue from the previous day, and instead of pushing through it, I allowed it to settle.",
+        image: "images/Day140.jpg",
+        link: "posts/day-140.html"
+    },
+ {
+        tag: "Week 20",
         date: "Apr 3, 2026",
         pain: "1/10",
         swelling: "1/10",
