@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 20",
+        date: "Apr 2, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 137: Pushing, Feeling, Adjusting",
+        description: "A structured day built around training, with a return to cardio and a clear test of limits. Strength work felt solid, while running still exposed gaps that need patience. The body handled the load overall, and fatigue at the end of the day felt earned rather than concerning.",
+        image: "images/Day137.jpg",
+        link: "posts/day-137.html"
+    },
+ {
+        tag: "Week 20",
         date: "Apr 1, 2026",
         pain: "1/10",
         swelling: "1/10",
