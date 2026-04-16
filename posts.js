@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 21",
+        date: "Apr 7, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 142: Body Up, Energy Down",
+        description: "A day where the body responded well to movement, but energy levels lagged behind. Training and walking felt easier, signaling continued progress, yet fatigue and low energy took over by the evening. It became clear that recovery now depends not only on training, but also on how I fuel and manage the day.",
+        image: "images/Day142.jpg",
+        link: "posts/day-142.html"
+    },
+ {
+        tag: "Week 21",
         date: "Apr 6, 2026",
         pain: "1/10",
         swelling: "1/10",
