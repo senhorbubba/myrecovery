@@ -2,6 +2,16 @@ const posts = [
  {
         tag: "Week 20",
         date: "Apr 2, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 138: Easy Rhythm",
+        description: "A calm and restorative day built around family time and light movement. The body stayed active in a gentle way, without pressure or structure, allowing the fatigue from the previous day to settle. Recovery today came through simplicity rather than effort.",
+        image: "images/Day138.jpg",
+        link: "posts/day-138.html"
+    },
+ {
+        tag: "Week 20",
+        date: "Apr 2, 2026",
         pain: "2/10",
         swelling: "1/10",
         title: "Day 137: Pushing, Feeling, Adjusting",
