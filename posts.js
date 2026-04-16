@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 21",
+        date: "Apr 10, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 145: Aware but Improving",
+        description: "A day that started with tennis and reflection, moved into focused recovery work, and ended with a long social night. The knee felt more relaxed after the session with Taka, even though awareness during walking is still present. Progress continues, but the body is clearly carrying the load of the week.",
+        image: "images/Day145.jpg",
+        link: "posts/day-145.html"
+    },
+ {
+        tag: "Week 21",
         date: "Apr 9, 2026",
         pain: "1/10",
         swelling: "1/10",
