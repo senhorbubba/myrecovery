@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 21",
+        date: "Apr 8, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 143: Strong Data, Mixed Feelings",
+        description: "A day where objective signals showed strong recovery, good sleep score, improved strength, and better movement, while subjective feeling lagged behind. The body is progressing, measurements confirm it, but energy and mood still fluctuate. Progress is becoming measurable, even if it is not always fully felt.",
+        image: "images/Day143.jpg",
+        link: "posts/day-143.html"
+    },
+ {
+        tag: "Week 21",
         date: "Apr 7, 2026",
         pain: "1/10",
         swelling: "1/10",
