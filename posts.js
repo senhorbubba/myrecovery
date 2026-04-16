@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 21",
+        date: "Apr 9, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 144: Celebration and Contrast",
+        description: "A birthday filled with energy, family, and meaningful moments, balancing intention with indulgence. The day started with discipline and care, then naturally shifted into celebration. Physically, the body held up well through a full day of activity, including a return to golf, while mentally the focus stayed on enjoying the people and the moment.",
+        image: "images/Day144.jpg",
+        link: "posts/day-144.html"
+    },
+ {
+        tag: "Week 21",
         date: "Apr 8, 2026",
         pain: "2/10",
         swelling: "1/10",
