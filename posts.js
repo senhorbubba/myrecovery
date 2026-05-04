@@ -1,5 +1,185 @@
 const posts = [
  {
+        tag: "Week 24",
+        date: "Apr 28, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 163: The Obstacle and the Response",
+        description: "A steady day marked by growing physical confidence and deeper reflection about the meaning of recovery itself. Strength continues to improve, everyday life feels calmer, and the emotional perspective around the injury is slowly changing from frustration into understanding.",
+        image: "images/Day163.jpg",
+        link: "posts/day-163.html"
+    },
+ {
+        tag: "Week 24",
+        date: "Apr 27, 2026",
+        pain: "1-2/10",
+        swelling: "1-2/10",
+        title: "Day 162: Feeling Strong Again",
+        description: "A demanding day that started with stress and routine pressure but ended with one of the strongest rehab sessions so far. Despite exhaustion from commuting and work, the body responded powerfully during training, bringing a real sense that athletic movement is slowly returning.",
+        image: "images/Day162.jpg",
+        link: "posts/day-162.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 26, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 161: Energy Returning",
+        description: "A strong and active day marked by high energy, productive training, and meaningful family moments. The body responded well from the start, and even though the deep massage exposed how much tension had built up, it also brought relief. More than anything, the day carried the feeling that strength, movement, and normal life are slowly reconnecting again.",
+        image: "images/Day161.jpg",
+        link: "posts/day-161.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 25, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 160: Looking Forward Again",
+        description: "A full family day centered around sport, movement, and quiet signs that life is slowly returning to normal. Recovery conversations now carry more optimism than fear, and for the first time future plans around tennis feel realistic instead of distant dreams.",
+        image: "images/Day160.jpg",
+        link: "posts/day-160.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 24, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 159: Small Green Lights",
+        description: "A reassuring day filled with small but meaningful confirmations that recovery is moving forward. Questions about strange sensations in the knee were answered with reassurance, and for the first time there was real encouragement toward returning to controlled tennis movements. The day balanced progress, work, and quiet family recovery after travel.",
+        image: "images/Day159.jpg",
+        link: "posts/day-159.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 23, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 158: Back Into Rhythm",
+        description: "The first day back after the beach carried a mix of lingering fatigue and returning structure. The body still felt the accumulated load from days of constant movement, even without intense training, while work quickly demanded full attention again. A calm family evening helped close the transition back into routine.",
+        image: "images/Day158.jpg",
+        link: "posts/day-158.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 22, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 157: Slow Return",
+        description: "A peaceful final day at the beach focused on calm movement, family time, and preparation to return home. The slower pace, healthy habits, and light physio created a feeling of reset before going back into routine.",
+        image: "images/Day157.jpg",
+        link: "posts/day-157.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 21, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 156: Watching and Waiting",
+        description: "A day filled with family activities and movement, but also quiet reminders of what is still out of reach. Watching the kids enjoy sports brought pride and happiness, while at the same time highlighting the distance that still remains before fully returning to the activities I love myself.",
+        image: "images/Day156.jpg",
+        link: "posts/day-156.html"
+    },
+ {
+        tag: "Week 23",
+        date: "Apr 20, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 155: Slowing Down Together",
+        description: "A quieter beach day centered around family, small adventures, and listening to everyone's energy levels. The focus shifted away from recovery work and toward simply being present. Fatigue and a slightly sick child naturally slowed the pace, creating a calm ending to the day.",
+        image: "images/Day155.jpg",
+        link: "posts/day-155.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 19, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 154: A Glimpse of Freedom",
+        description: "A day filled with movement, family, and small steps toward feeling athletic again. Controlled tennis movements and beach physio brought both confidence and caution, while the evening bike ride created a rare feeling of freedom that has been missing for months.",
+        image: "images/Day154.jpg",
+        link: "posts/day-154.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 18, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 153: Letting the Body Breathe",
+        description: "A slow and restorative beach day centered around rest, movement without pressure, and quality time with family. After weeks of structured recovery and constant routines, the body seemed to respond well to a day built around natural movement and relaxation.",
+        image: "images/Day153.jpg",
+        link: "posts/day-153.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 17, 2026",
+        pain: "2-3/10",
+        swelling: "2/10",
+        title: "Day 152: The Cost of Sitting Still",
+        description: "A day built around preparation and transition. Training came early and intense before the long trip to the beach, but hours in the car reminded me how difficult prolonged sitting still is for the body now. The knee handled the workload in the gym better than the static position afterward.",
+        image: "images/Day152.jpg",
+        link: "posts/day-152.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 16, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 151: Beyond the Knee",
+        description: "A productive day where attention shifted beyond the knee and toward the rest of the body and mind. Training and work continued as usual, but new discomfort in the back became more noticeable. The evening brought meaningful conversations that moved beyond business and into deeper reflections about purpose and awareness.",
+        image: "images/Day151.jpg",
+        link: "posts/day-151.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 15, 2026",
+        pain: "1-2/10",
+        swelling: "1-2/10",
+        title: "Day 150: The Worst Is Behind",
+        description: "A day that combined perspective, progress, and reflection. Physically, training continued to evolve into more demanding and sport-specific movements, exposing both improvement and remaining weaknesses. Mentally, reaching 150 days after surgery brought a realization that even if full return is still ahead, the hardest phase is no longer where I live.",
+        image: "images/Day150.jpg",
+        link: "posts/day-150.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 14, 2026",
+        pain: "1-2/10",
+        swelling: "2/10",
+        title: "Day 149: Feeling the Work",
+        description: "A quiet and structured day where the body clearly reflected the workload from yesterday's breakthrough session. Fatigue in the legs and slight swelling in the knee served as reminders that progress also comes with physical cost. The focus today shifted toward recovery and allowing the body to absorb the work.",
+        image: "images/Day149.jpg",
+        link: "posts/day-149.html"
+    },
+ {
+        tag: "Week 22",
+        date: "Apr 13, 2026",
+        pain: "1-2/10",
+        swelling: "2-3/10",
+        title: "Day 148: A Breakthrough in Control",
+        description: "A demanding workday followed by one of the most encouraging physio sessions in weeks. Despite lingering fatigue from the weekend, the session with Cleyber introduced a new approach that significantly reduced pain and allowed stronger movement. For the first time in a while, progress felt not only visible, but measurable in effort and confidence.",
+        image: "images/Day148.jpg",
+        link: "posts/day-148.html"
+    },
+ {
+        tag: "Week 21",
+        date: "Apr 12, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 147: Quiet Recovery",
+        description: "A balanced Sunday that started with effort and ended with rest. Training felt more controlled and manageable, showing clear physical progress, while the rest of the day was intentionally slow. Recovery, family, and quiet routines became the priority.",
+        image: "images/Day147.jpg",
+        link: "posts/day-147.html"
+    },
+ {
+        tag: "Week 21",
+        date: "Apr 11, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 146: Forced Slowdown",
+        description: "A slow Saturday shaped by exhaustion and recovery after the wedding. The body demanded rest from the beginning, and for once I allowed it without resistance. Even in a low-energy day, the knee continued to feel stable and light, which stood out as an important contrast to the overall fatigue.",
+        image: "images/Day146.jpg",
+        link: "posts/day-146.html"
+    },
+ {
         tag: "Week 21",
         date: "Apr 10, 2026",
         pain: "2/10",
