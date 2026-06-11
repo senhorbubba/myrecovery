@@ -1,5 +1,415 @@
 const posts = [
  {
+        tag: "Week 30",
+        date: "Jun 8, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 204: Watching Him Grow",
+        description: "A day with no physio but plenty of movement and emotion. My legs reminded me of yesterday's run, especially the calves, making recovery the priority. The highlight, however, was celebrating my oldest son with his friends and realizing that he is building something much more valuable than grades or trophies—a great group of people around him.",
+        image: "images/Day204.jpg",
+        link: "posts/day-204.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 7, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 203: A Runner Again",
+        description: "A Sunday that quietly marked another milestone in recovery. Instead of heading to the gym, I tested my body in a more functional way with a 5 km run. The biggest victory wasn't the pace—it was finishing without pain. The rest of the day revolved around sport, family, and appreciating how far this journey has already taken me.",
+        image: "images/Day203.jpg",
+        link: "posts/day-203.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 6, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 202: A Day Worth the Drive",
+        description: "A full day built around sport, friendship, and family. The morning started with another consistent gym session before turning into a beach getaway filled with good conversations, great food, and plenty of time with people who matter. Physically exhausting, but mentally refreshing.",
+        image: "images/Day202.jpg",
+        link: "posts/day-202.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 5, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 201: Celebrating the Small Wins",
+        description: "A slower day without training, focused on balancing work, family, and small personal interests. While productivity was challenging with the kids at home, the real highlight came in the evening, celebrating Gabriel's excellent academic results. Recovery is teaching me that some victories happen far away from the tennis court.",
+        image: "images/Day201.jpg",
+        link: "posts/day-201.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 4, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 200: Two Hundred Days Later",
+        description: "Two hundred days after surgery, the journey feels completely different from where it began. The day itself was simple—training, family, food, and conversation—but it carried the quiet satisfaction of consistency. Looking back, recovery has become less about surviving each day and more about living life again while getting stronger.",
+        image: "images/Day200.jpg",
+        link: "posts/day-200.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 3, 2026",
+        pain: "2/10",
+        swelling: "1-2/10",
+        title: "Day 199: A Reality Check",
+        description: "A day that reminded me how different controlled rehabilitation is from real-life movement. Running on roads with hills and uneven surfaces exposed weaknesses that the gym cannot simulate. It was a valuable test—not because it went perfectly, but because it showed exactly where I still need to improve.",
+        image: "images/Day199.jpg",
+        link: "posts/day-199.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 2, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 198: Back on Track",
+        description: "A much better day after yesterday's fatigue. Energy returned, training was strong, and the routine felt normal again. The evening brought excitement and disappointment while watching Roland Garros, a reminder that in sport, as in recovery, effort does not always guarantee the result you hope for.",
+        image: "images/Day198.jpg",
+        link: "posts/day-198.html"
+    },
+ {
+        tag: "Week 29",
+        date: "Jun 1, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 197: Pushing Through",
+        description: "A day shaped by fatigue and recovery rather than performance. The weekend finally caught up with me, and my body made it clear that it needed rest. Even so, I kept moving forward with work and physio, accepting that not every day is about making big gains—sometimes it is simply about staying consistent.",
+        image: "images/Day197.jpg",
+        link: "posts/day-197.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 31, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 196: Leaving the Comfort Zone",
+        description: "A day that started with resistance but ended with inspiration. Forcing myself to train set the tone, while watching Juliana perform on stage became the highlight of the day. More than music, it was a lesson for the kids—and for me—that growth only happens when we are willing to leave our comfort zone.",
+        image: "images/Day196.jpg",
+        link: "posts/day-196.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 30, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 195: Wins and Losses",
+        description: "A calm Saturday built around sport, family, and perspective. The day started with another productive gym session and cardio work before shifting to Gabriel's football final. The result was disappointing, but that is part of every athlete's journey. The afternoon became a celebration of sport itself, ending with a relaxing evening watching Roland Garros.",
+        image: "images/Day195.jpg",
+        link: "posts/day-195.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 29, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 194: Back to Fridays",
+        description: "Another Friday that felt increasingly familiar. Tennis is slowly becoming part of my routine again, bringing back excitement that I had missed for months. The session was relaxed, the company was great, and even a flat tire on the way home couldn't spoil the mood. The day ended the way good Fridays often do—with family, laughter, and a quiet evening together.",
+        image: "images/Day194.jpg",
+        link: "posts/day-194.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 28, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 193: Energy Creates Momentum",
+        description: "An unusually energetic day that started before sunrise and carried momentum through work, business discussions, and a demanding physio session. The body responded well to training, while the mind was occupied with new opportunities and strategic changes. Recovery is no longer the only project—it is becoming the foundation for everything else.",
+        image: "images/Day193.jpg",
+        link: "posts/day-193.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 27, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 192: Building Strength Beyond the Gym",
+        description: "A day that combined work, health, and reflection. Physically, I challenged my endurance with a 5 km run and later experienced the contrast of heat and cold therapy. Mentally, conversations about protecting children in the digital world and spending time with good friends reminded me that recovery is about much more than rebuilding a knee.",
+        image: "images/Day192.jpg",
+        link: "posts/day-192.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 26, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 191: The Cost of Sitting",
+        description: "A physically uneventful but mentally exhausting day. The gym started the morning on a positive note, but long hours of sitting, traffic, and office work left both my body and mind drained. The knee continues to surprise me with new aches, reminding me that recovery is rarely a straight line.",
+        image: "images/Day191.jpg",
+        link: "posts/day-191.html"
+    },
+ {
+        tag: "Week 28",
+        date: "May 25, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 190: Progress vs. Expectations",
+        description: "A typical Monday filled with routine, work, and rehab. The biggest challenge today wasn't physical but mental. While Cleyber was pleased with my progress, I found myself focusing on everything that is still missing. Recovery continues, but expectations are moving just as fast as improvements.",
+        image: "images/Day190.jpg",
+        link: "posts/day-190.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 24, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 189: Learning to Hold Back",
+        description: "A healthy and relaxing Sunday that combined training, family time, and an important lesson in patience. Physically, the body continues to improve, but mentally the biggest challenge is resisting the instinct to chase every ball and play without limitations. Recovery is now less about rebuilding strength and more about controlling ambition.",
+        image: "images/Day189.jpg",
+        link: "posts/day-189.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 23, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 188: Celebrating Together",
+        description: "A day that balanced training, family emotions, and time as a couple. Watching Gabriel's team pull off an incredible comeback was a reminder of why we love sports, while celebrating our wedding anniversary brought a chance to slow down and appreciate everything we have been through together. Sometimes recovery also means giving yourself permission to simply enjoy life.",
+        image: "images/Day188.jpg",
+        link: "posts/day-188.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 22, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 187: Small Steps Back to Tennis",
+        description: "A day that combined progress on the court with a deliberate focus on recovery. Tennis movements became a little more dynamic, confidence grew, and the body responded well. At the same time, stepping away from the phone unexpectedly created space for something equally important: being fully present with the kids.",
+        image: "images/Day187.jpg",
+        link: "posts/day-187.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 21, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 186: Momentum",
+        description: "A day fueled by the optimism from yesterday's appointment with Dr. Sergio. The positive medical feedback carried into training, work, and mindset. Recovery no longer feels like a distant project but something tangible and measurable, with progress becoming visible in both strength and confidence.",
+        image: "images/Day186.jpg",
+        link: "posts/day-186.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 20, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 185: The Light at the End of the Tunnel",
+        description: "A day dominated by anticipation and finished with reassurance. The long-awaited appointment with Dr. Sergio brought encouraging news, confirmation that recovery is progressing well, and perhaps most importantly, a realistic timeline for returning to sports. For the first time, the finish line feels close enough to touch.",
+        image: "images/Day185.jpg",
+        link: "posts/day-185.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 19, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 184: Energy Coming Back",
+        description: "A much better day after the fatigue of the previous week and weekend. Energy levels started returning, training felt productive again, and the body responded well to movement. Small signs of recovery appeared everywhere, from improved back pain to renewed motivation and focus.",
+        image: "images/Day184.jpg",
+        link: "posts/day-184.html"
+    },
+ {
+        tag: "Week 27",
+        date: "May 18, 2026",
+        pain: "2/10",
+        swelling: "1-2/10",
+        title: "Day 183: Progress Hidden Behind Fatigue",
+        description: "A difficult Monday where accumulated fatigue from the weekend was impossible to ignore. Energy levels were low, the legs felt heavy, and even coffee could not compensate. Yet beneath the tiredness was one of the most encouraging signs of progress so far: measurable improvement in muscle symmetry and strength.",
+        image: "images/Day183.jpg",
+        link: "posts/day-183.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 17, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 182: Listening to the Body",
+        description: "A slow recovery day after a busy and social weekend. The body clearly demanded rest, and for once I listened. Fatigue, dehydration, and a slightly fuller knee served as reminders that progress does not eliminate the need for recovery. The day became less about pushing forward and more about recharging for the week ahead.",
+        image: "images/Day182.jpg",
+        link: "posts/day-182.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 16, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 181: Showing Up",
+        description: "A day centered around being present for the kids, both in victory and defeat. Recovery continued quietly in the background, but the bigger lesson came from watching my children compete, smile, struggle, and look toward the sidelines. It reminded me why simply being there matters so much.",
+        image: "images/Day181.jpg",
+        link: "posts/day-181.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 15, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 180: Feeling Like an Athlete Again",
+        description: "A milestone kind of Friday where tennis once again became part of normal life. The body is still adapting and limitations are still present, but the feeling of movement, fatigue, and progression brought back a sense of identity that had been missing for months. At the same time, the social rebound from recent low moods continues pulling me toward excess again.",
+        image: "images/Day180.jpg",
+        link: "posts/day-180.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 14, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 179: Closer to the Other Side",
+        description: "A day that balanced hard training with meaningful social connection. Physically, the rehab continues progressing into more dynamic territory, even if some movements still feel uncomfortable. Emotionally, talking to someone who already went through the same process reinforced how far I've already come.",
+        image: "images/Day179.jpg",
+        link: "posts/day-179.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 13, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 178: Reset Through Connection",
+        description: "A lighter day physically, but an important one mentally. Skipping the gym allowed the body to recover, while conversations, networking, and time around other motivated people helped restore energy and perspective. Sometimes recovery comes more from connection than training.",
+        image: "images/Day178.jpg",
+        link: "posts/day-178.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 12, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 177: Building Strength and Ideas",
+        description: "A physically demanding but rewarding day where increasing training load continued to feel manageable. Beyond recovery, the day also opened a new type of project with Gabriel, combining creativity, technology, and early lessons about business and responsibility.",
+        image: "images/Day177.jpg",
+        link: "posts/day-177.html"
+    },
+ {
+        tag: "Week 26",
+        date: "May 11, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 176: New Tools and New Energy",
+        description: "A busy but lighter day where recovery took a more passive role while family curiosity and technology took center stage. The body still carried fatigue from yesterday's training, making the quieter pace feel appropriate. Instead of physio, the evening became about discovery, creativity, and sharing excitement with Gabriel.",
+        image: "images/Day176.jpg",
+        link: "posts/day-176.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 10, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 175: Gratitude and Perspective",
+        description: "A meaningful Mother's Day built around family, gratitude, and reflection. The day balanced physical progress with emotional appreciation, especially for the support received throughout recovery. Training felt strong, but the deeper impact came from recognizing the people who carried part of this journey alongside me.",
+        image: "images/Day175.jpg",
+        link: "posts/day-175.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 9, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 174: Full Circle Moments",
+        description: "A busy and active day centered around the kids, sport, and family connection. Watching Kai compete and later sharing tennis moments together created a strong sense of continuity between generations. Even without a formal workout, the day was filled with movement, energy, and emotional reward.",
+        image: "images/Day174.jpg",
+        link: "posts/day-174.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 8, 2026",
+        pain: "1-2/10",
+        swelling: "1-2/10",
+        title: "Day 173: Back on Court",
+        description: "A milestone day filled with excitement, emotion, and cautious joy. After six months away, I finally stepped back onto the tennis court. Physically, everything still feels far from normal, but emotionally it felt like reconnecting with a part of myself that had been missing for a long time.",
+        image: "images/Day173.jpg",
+        link: "posts/day-173.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 7, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 172: The Night Before the Return",
+        description: "A day that started with energy, movement, and improved mood, but ended with accumulated fatigue from pushing too hard. Emotionally, though, there was a different kind of energy building underneath everything: excitement. Tomorrow marks the return to tennis.",
+        image: "images/Day172.jpg",
+        link: "posts/day-172.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 6, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 171: One of Those Days",
+        description: "A mentally heavy day shaped by poor sleep, stress, and emotional fatigue more than physical recovery. The knee stayed quiet, but energy and mood were unstable throughout the day. A reminder that recovery is not always physical, and sometimes the hardest battles happen entirely in the mind.",
+        image: "images/Day171.jpg",
+        link: "posts/day-171.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 5, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 170: Stronger Body, Tired Mind",
+        description: "A productive but tiring day where physical strength continued to improve while mental energy slowly faded throughout the day. The knee feels increasingly reliable, and overall gym performance keeps rising, but balancing work, family, and recovery still drains energy by the evening.",
+        image: "images/Day170.jpg",
+        link: "posts/day-170.html"
+    },
+ {
+        tag: "Week 25",
+        date: "May 4, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 169: Resetting the Routine",
+        description: "A hectic day focused on reorganizing both the house and personal habits. Between work, family chaos, cardio, and thoughts about health and weight, the day carried a strong feeling of reset. Physically the knee remained stable, but mentally and physically fatigue continued to show through stress and back pain.",
+        image: "images/Day169.jpg",
+        link: "posts/day-169.html"
+    },
+ {
+        tag: "Week 24",
+        date: "May 3, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 168: Quiet Rhythm",
+        description: "A calm Sunday built around routine, family time, and consistency. Training stayed strong in the morning, especially for the legs, while the rest of the day slowed into a peaceful rhythm at home. The knee feels stable, but still asks for more attention around mobility and flexibility.",
+        image: "images/Day168.jpg",
+        link: "posts/day-168.html"
+    },
+ {
+        tag: "Week 24",
+        date: "May 2, 2026",
+        pain: "1-2/10",
+        swelling: "1/10",
+        title: "Day 167: Close to the Water Again",
+        description: "A day full of movement, family energy, and reminders of the life waiting beyond recovery. Even without being able to wakeboard yet, simply being back at the lake brought excitement and motivation. Watching the kids experience the sport for the first time created a different kind of satisfaction.",
+        image: "images/Day167.jpg",
+        link: "posts/day-167.html"
+    },
+ {
+        tag: "Week 24",
+        date: "May 1, 2026",
+        pain: "2/10",
+        swelling: "1-2/10",
+        title: "Day 166: Long Drives and Slow Recovery",
+        description: "A holiday shaped by family rhythm, interrupted rest, and long hours on the road. The body handled the day reasonably well, but extended time sitting in the car once again reminded me that travel remains one of the most difficult parts of recovery.",
+        image: "images/Day166.jpg",
+        link: "posts/day-166.html"
+    },
+ {
+        tag: "Week 24",
+        date: "Apr 30, 2026",
+        pain: "1-2/10",
+        swelling: "1-2/10",
+        title: "Day 165: Pushing Through the Routine",
+        description: "A full and demanding day built around routine, work, and training. Physically, strength continues to improve, especially in the legs, but the day also highlighted how recovery can quickly be affected by poor sleep and excess. Progress remains clear, even when balance slips again.",
+        image: "images/Day165.jpg",
+        link: "posts/day-165.html"
+    },
+ {
+        tag: "Week 24",
+        date: "Apr 29, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 164: The Weight of Recovery",
+        description: "A reflective day focused not only on recovery progress, but also on the physical changes that come with months away from full activity. Seeing the number on the scale brought some frustration, but also a realization that the body is rebuilding itself in multiple ways at once.",
+        image: "images/Day164.jpg",
+        link: "posts/day-164.html"
+    },
+ {
         tag: "Week 24",
         date: "Apr 28, 2026",
         pain: "1/10",
