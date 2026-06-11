@@ -1,6 +1,16 @@
 const posts = [
  {
         tag: "Week 30",
+        date: "Jun 9, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 205: Feeling Like Myself Again",
+        description: "A day where tennis once again felt natural. The movement is still controlled and the timing is not fully back, but the confidence continues to grow. Strength is returning in the gym, new equipment adjustments are working well, and the line between work, learning, and building has become increasingly blurred thanks to AI.",
+        image: "images/Day205.jpg",
+        link: "posts/day-205.html"
+    },
+ {
+        tag: "Week 30",
         date: "Jun 8, 2026",
         pain: "1-2/10",
         swelling: "1/10",
