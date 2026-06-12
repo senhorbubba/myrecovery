@@ -15,7 +15,7 @@ const posts = [
         pain: "1-2/10",
         swelling: "1/10",
         title: "Day 204: Watching Him Grow",
-        description: "A day with no physio but plenty of movement and emotion. My legs reminded me of yesterday's run, especially the calves, making recovery the priority. The highlight, however, was celebrating my oldest son with his friends and realizing that he is building something much more valuable than grades or trophies—a great group of people around him.",
+        description: "A day with no physio but plenty of movement and emotion. My legs reminded me of yesterday's run, especially the calves, making recovery the priority. The highlight, however, was celebrating my oldest son with his friends and realizing that he is building something much more valuable than grades or trophies, a great group of people around him.",
         image: "images/Day204.jpg",
         link: "posts/day-204.html"
     },
@@ -25,7 +25,7 @@ const posts = [
         pain: "1/10",
         swelling: "1/10",
         title: "Day 203: A Runner Again",
-        description: "A Sunday that quietly marked another milestone in recovery. Instead of heading to the gym, I tested my body in a more functional way with a 5 km run. The biggest victory wasn't the pace—it was finishing without pain. The rest of the day revolved around sport, family, and appreciating how far this journey has already taken me.",
+        description: "A Sunday that quietly marked another milestone in recovery. Instead of heading to the gym, I tested my body in a more functional way with a 5 km run. The biggest victory wasn't the pace, it was finishing without pain. The rest of the day revolved around sport, family, and appreciating how far this journey has already taken me.",
         image: "images/Day203.jpg",
         link: "posts/day-203.html"
     },
@@ -55,7 +55,7 @@ const posts = [
         pain: "1/10",
         swelling: "1/10",
         title: "Day 200: Two Hundred Days Later",
-        description: "Two hundred days after surgery, the journey feels completely different from where it began. The day itself was simple—training, family, food, and conversation—but it carried the quiet satisfaction of consistency. Looking back, recovery has become less about surviving each day and more about living life again while getting stronger.",
+        description: "Two hundred days after surgery, the journey feels completely different from where it began. The day itself was simple, training, family, food, and conversation, but it carried the quiet satisfaction of consistency. Looking back, recovery has become less about surviving each day and more about living life again while getting stronger.",
         image: "images/Day200.jpg",
         link: "posts/day-200.html"
     },
@@ -65,7 +65,7 @@ const posts = [
         pain: "2/10",
         swelling: "1-2/10",
         title: "Day 199: A Reality Check",
-        description: "A day that reminded me how different controlled rehabilitation is from real-life movement. Running on roads with hills and uneven surfaces exposed weaknesses that the gym cannot simulate. It was a valuable test—not because it went perfectly, but because it showed exactly where I still need to improve.",
+        description: "A day that reminded me how different controlled rehabilitation is from real-life movement. Running on roads with hills and uneven surfaces exposed weaknesses that the gym cannot simulate. It was a valuable test, not because it went perfectly, but because it showed exactly where I still need to improve.",
         image: "images/Day199.jpg",
         link: "posts/day-199.html"
     },
@@ -85,7 +85,7 @@ const posts = [
         pain: "1-2/10",
         swelling: "1/10",
         title: "Day 197: Pushing Through",
-        description: "A day shaped by fatigue and recovery rather than performance. The weekend finally caught up with me, and my body made it clear that it needed rest. Even so, I kept moving forward with work and physio, accepting that not every day is about making big gains—sometimes it is simply about staying consistent.",
+        description: "A day shaped by fatigue and recovery rather than performance. The weekend finally caught up with me, and my body made it clear that it needed rest. Even so, I kept moving forward with work and physio, accepting that not every day is about making big gains, sometimes it is simply about staying consistent.",
         image: "images/Day197.jpg",
         link: "posts/day-197.html"
     },
@@ -95,7 +95,7 @@ const posts = [
         pain: "1/10",
         swelling: "1/10",
         title: "Day 196: Leaving the Comfort Zone",
-        description: "A day that started with resistance but ended with inspiration. Forcing myself to train set the tone, while watching Juliana perform on stage became the highlight of the day. More than music, it was a lesson for the kids—and for me—that growth only happens when we are willing to leave our comfort zone.",
+        description: "A day that started with resistance but ended with inspiration. Forcing myself to train set the tone, while watching Juliana perform on stage became the highlight of the day. More than music, it was a lesson for the kids, and for me, that growth only happens when we are willing to leave our comfort zone.",
         image: "images/Day196.jpg",
         link: "posts/day-196.html"
     },
@@ -115,7 +115,7 @@ const posts = [
         pain: "1/10",
         swelling: "1/10",
         title: "Day 194: Back to Fridays",
-        description: "Another Friday that felt increasingly familiar. Tennis is slowly becoming part of my routine again, bringing back excitement that I had missed for months. The session was relaxed, the company was great, and even a flat tire on the way home couldn't spoil the mood. The day ended the way good Fridays often do—with family, laughter, and a quiet evening together.",
+        description: "Another Friday that felt increasingly familiar. Tennis is slowly becoming part of my routine again, bringing back excitement that I had missed for months. The session was relaxed, the company was great, and even a flat tire on the way home couldn't spoil the mood. The day ended the way good Fridays often do, with family, laughter, and a quiet evening together.",
         image: "images/Day194.jpg",
         link: "posts/day-194.html"
     },
@@ -125,7 +125,7 @@ const posts = [
         pain: "1/10",
         swelling: "1/10",
         title: "Day 193: Energy Creates Momentum",
-        description: "An unusually energetic day that started before sunrise and carried momentum through work, business discussions, and a demanding physio session. The body responded well to training, while the mind was occupied with new opportunities and strategic changes. Recovery is no longer the only project—it is becoming the foundation for everything else.",
+        description: "An unusually energetic day that started before sunrise and carried momentum through work, business discussions, and a demanding physio session. The body responded well to training, while the mind was occupied with new opportunities and strategic changes. Recovery is no longer the only project, it is becoming the foundation for everything else.",
         image: "images/Day193.jpg",
         link: "posts/day-193.html"
     },
@@ -1016,7 +1016,7 @@ const posts = [
         pain: "1/10",
         swelling: "2/10",
         title: "Day 104: Active Recovery, Subtle Doubts",
-        description: "A productive and physically active day, despite a mild hangover. Movement was present from morning to evening, mostly around the kids and structured training. Energy returned gradually. The knee handled the load well, but walking still feels slightly unnatural — a quiet reminder that recovery isn’t fully complete. A healthy day overall, with discipline slowly reasserting itself.",
+        description: "A productive and physically active day, despite a mild hangover. Movement was present from morning to evening, mostly around the kids and structured training. Energy returned gradually. The knee handled the load well, but walking still feels slightly unnatural, a quiet reminder that recovery isn’t fully complete. A healthy day overall, with discipline slowly reasserting itself.",
         image: "images/Day104.jpg",
         link: "posts/day-104.html"
     },
@@ -1206,7 +1206,7 @@ const posts = [
         pain: "3/10",
         swelling: "3/10",
         title: "Day 86: Quiet Strength",
-        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night — the kind that reminds you what training used to feel like.",
+        description: "A more physical day, with signs of real improvement mixed with new sensations. Less focus on the knee during work, more awareness of the body’s fatigue at night, the kind that reminds you what training used to feel like.",
         image: "images/Day86.jpg",
         link: "posts/day-86.html"
     },
