@@ -1,5 +1,415 @@
 const posts = [
  {
+        tag: "Week 36",
+        date: "Jul 20, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 246: Too Old for This",
+        description: "Four hours of sleep after the final, vitals completely off, and a day spent surviving rather than living. Cleyber made me do the physio anyway, and I am glad he did. We ran an isometric strength test comparing the legs, and the result was more encouraging than what I feel in the gym.",
+        image: "images/Day246.webp",
+        link: "posts/day-246.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 19, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 245: The Final",
+        description: "Tennis with Gustavo, with a quick 2 km run beforehand to warm up. Moving with more confidence and speed now, though the reactions still lag and there is still some fear about pushing too hard. In the evening, the World Cup final at a pub, and far too many beers.",
+        image: "images/Day245.webp",
+        link: "posts/day-245.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 18, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 244: No More Pain in the Knees",
+        description: "Strength training and a 5 km indoor run at a good pace, with stamina clearly improving. I do not feel pain in my knees anymore, I can accelerate properly, and I feel stronger. The morning caught up with me at the club later, but playing with the kids helped.",
+        image: "images/Day244.webp",
+        link: "posts/day-244.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 17, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 243: Actively Resting",
+        description: "Physio for legs in the morning, then a disappointment at the club when tennis was cancelled for the summer break, with new strings waiting to be tested. The evening was a walk in the park with the kids and a light installation, which turned out to be exactly the right substitute.",
+        image: "images/Day243.webp",
+        link: "posts/day-243.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 16, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 242: The First Twenty Seconds",
+        description: "Getting up is only hard for about twenty seconds, and then the energy arrives. Chest and triceps in the morning, a 5 km indoor run at lunch, and stretching and rolling in the evening that I had almost forgotten how to do. I want my early injury consistency back.",
+        image: "images/Day242.webp",
+        link: "posts/day-242.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 15, 2026",
+        pain: "2/10",
+        swelling: "1/10",
+        title: "Day 241: Pushing Through the Patella",
+        description: "A work day with the kids at home, which meant locking myself in a room to get anything done. Physio alone again since Clayber is travelling, following his instructions and pushing strength through the discomfort. The patella is better but still reminds me it is there.",
+        image: "images/Day241.webp",
+        link: "posts/day-241.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 14, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 240: No Gym, Plenty of Motion",
+        description: "A lazy day on the training front and a busy one on every other. Breakfast with one friend, a client call, lunch with another friend, a coffee meeting, and then France against Spain at the bar. What a game. Home tipsy but happy, and I still managed some stretching.",
+        image: "images/Day240.webp",
+        link: "posts/day-240.html"
+    },
+ {
+        tag: "Week 35",
+        date: "Jul 13, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 239: Last Tour of Brasilia",
+        description: "A cancelled client call freed up the afternoon, so I took the kids for one last tour of Brasilia. Impressive buildings, and a strange feeling seeing how many people and how much money it takes to govern the country. Then home to Sao Paulo, and the trip was over.",
+        image: "images/Day239.webp",
+        link: "posts/day-239.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 12, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 238: Wrong Turn, Right Waterfall",
+        description: "Feeling guilty about doing nothing but hiking, I got up for a forty minute run around the condominium and a light physio session with elastics. Then we drove to the wrong place, lost over an hour, and still ended the day at a beautiful waterfall.",
+        image: "images/Day238.webp",
+        link: "posts/day-238.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 11, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 237: Walking on the Moon",
+        description: "A longer hike to the Valley of the Moon, which genuinely feels like walking on another planet. The kids handled the distance well, the cold water dealt with the hangover, and my leg took a serious amount of walking without any trouble at all.",
+        image: "images/Day237.webp",
+        link: "posts/day-237.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 10, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 236: Into Chapada dos Veadeiros",
+        description: "An early start and a two hour drive to Chapada dos Veadeiros, where we did our first hike with the kids and jumped into natural pools. The knee felt great throughout, though the slippery stones demanded real attention. The evening was pool, drinks, and good company.",
+        image: "images/Day236.webp",
+        link: "posts/day-236.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 9, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 235: Two Hours and a Game of Hopscotch",
+        description: "A core and bike session before travelling, knowing the trip would not leave much room for training. Then two hours stuck at the rental car company, which we turned into a game of Polish hopscotch with the kids, before arriving at my friend's father's house for a long overdue catch up.",
+        image: "images/Day235.webp",
+        link: "posts/day-235.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 8, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 234: Quasi Yoga",
+        description: "No gym today, so I did what I call quasi yoga, a set of positions I still remember from junior tennis warm ups with my old coach Waldemar Fejfer. Later a business conversation with a friend, and in the evening Cleyber was back, which meant the machines got hit properly again.",
+        image: "images/Day234.webp",
+        link: "posts/day-234.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 7, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 233: Stretching Through the Games",
+        description: "Strength training in the morning, then a short work day from home with one client meeting. The evening was Argentina against Egypt and Switzerland against Colombia, with stretching happening throughout. The routine might genuinely be coming back.",
+        image: "images/Day233.webp",
+        link: "posts/day-233.html"
+    },
+ {
+        tag: "Week 34",
+        date: "Jul 6, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 232: Why the Physio Matters",
+        description: "Legs and physio work done alone, since Cleyber was away. I can execute the programme by myself, but I cannot push myself the way he pushes me. Having someone next to you who keeps asking for one more when you are tired makes a real difference.",
+        image: "images/Day232.webp",
+        link: "posts/day-232.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jul 5, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 231: Pushing the Ceiling",
+        description: "Strength training and a 5 km indoor run in a quiet house with the kids still away. I gave a lot today and could feel that my speed is coming back and that I can sustain harder work now. Pushing more, but still very aware of the limits.",
+        image: "images/Day231.webp",
+        link: "posts/day-231.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jul 4, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 230: A Quiet Kind of Strong",
+        description: "Legs and indoor rowing, then an easy day at home. A morning walk with the kids before they went off with their grandparents, leaving a rare stretch of calm time with my wife. The training load is climbing and I feel genuinely strong.",
+        image: "images/Day230.webp",
+        link: "posts/day-230.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jul 3, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 229: Never Giving Up",
+        description: "Another solo tennis session full of drills, moving faster and leaning on the legs more than before. The reactions are still delayed and the timing is still off, but it improves every week. In the evening, watching Cabo Verde resist Argentina was a useful reminder about what fight actually looks like.",
+        image: "images/Day229.webp",
+        link: "posts/day-229.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jul 2, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 228: Rebuilding the Small Habits",
+        description: "An hour in the gym on chest and triceps, then working from home with a few calls. The day ended with stretching, as I try to bring back a routine that used to be automatic during the early months of this recovery.",
+        image: "images/Day228.webp",
+        link: "posts/day-228.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jul 1, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 227: The Gap Is Getting Smaller",
+        description: "A strong session with Cleyber after a long gap, including pivoting work and a lot of movement. He was very happy with the results, and the measurements confirmed it. The difference between the two legs is smaller than it was, which is real progress, though there is still a long way to go.",
+        image: "images/Day227.webp",
+        link: "posts/day-227.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jun 30, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 226: Cardio and Conversations",
+        description: "A morning of rowing and indoor running, getting the cardio back into the routine properly. The rest of the day was conversations, a lunch about business ideas and a coffee about prospecting new clients and connecting networks.",
+        image: "images/Day226.webp",
+        link: "posts/day-226.html"
+    },
+ {
+        tag: "Week 33",
+        date: "Jun 29, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 225: Five Plates",
+        description: "A leg focused gym session with some physio work, and I reached five plates, a number that would have looked absurd a few months ago. Later, while Kai practised tennis, I got in thirty minutes of cardio and twenty minutes of elastics on the side of the court.",
+        image: "images/Day225.webp",
+        link: "posts/day-225.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 28, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 224: A Deliberately Slow Sunday",
+        description: "A lazy Sunday spent curing a hangover, with sauna, one World Cup game, and Toy Story 5 at the cinema. Lunch with the family at the mall, then the kids went off with their grandparents and we spent the evening doing very little.",
+        image: "images/Day224.webp",
+        link: "posts/day-224.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 27, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 223: Ninety Minutes and a Late Night",
+        description: "Ninety minutes of legs and shoulders in the morning, and the strength is genuinely coming back now. Tennis with Naomi, lunch with the kids in the neighbourhood, guitar practice, and then a festa junina at the club that went on until one in the morning.",
+        image: "images/Day223.webp",
+        link: "posts/day-223.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 26, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 222: I Am Coming Back",
+        description: "A solo tennis session where I asked my coach to start pushing me around the court, and it went well. Confident, solid, moving properly. I got home genuinely pumped, with the clear feeling that I am coming back. The muscles reminded me about it by evening.",
+        image: "images/Day222.webp",
+        link: "posts/day-222.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 25, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 221: Last Morning in Trancoso",
+        description: "The last day in this little paradise started with another leg session before travelling. One final enormous breakfast, a squeezed in swim, and then the transfer home. There was wine on the way to the airport, which says everything about the detox plan.",
+        image: "images/Day221.webp",
+        link: "posts/day-221.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 24, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 220: Nine Holes and One Long Day",
+        description: "Nine holes walked on an amazing course, and I played better than I expected to. Then driving range hits with the kids, a windy beach, the pool, and a Brazil World Cup game with far too much to drink. A great day that went on about three hours too long.",
+        image: "images/Day220.webp",
+        link: "posts/day-220.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 23, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 219: Trapeze and a First Bank Account",
+        description: "A very early run to make space for Juliana's gym session, then a day of circus activities with the kids. All three of them went up on the trapeze and pushed through real fear to do it. It is also Gabriel's birthday, and his gift was his first bank account.",
+        image: "images/Day219.webp",
+        link: "posts/day-219.html"
+    },
+ {
+        tag: "Week 32",
+        date: "Jun 22, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 218: Letting Them Find It",
+        description: "An early run outside the resort with hills and a good pace, and no pain at all. Later, hitting balls with Juliana while the kids practised, and watching Kai ask to stay on court longer. The temptation to push him is there, but it is better when they find the love for it themselves.",
+        image: "images/Day218.webp",
+        link: "posts/day-218.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 21, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 217: Stairs, Sand, and Tennis",
+        description: "A full hour of legs, strength and core in the resort gym, followed by an accidental stair workout when the elevator failed and we forgot the towels. The best part was taking Kai for tennis practice and seeing how much he is improving.",
+        image: "images/Day217.webp",
+        link: "posts/day-217.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 20, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 216: Landing in Paradise",
+        description: "Holidays start today. We flew to Bahia with the kids for a few days at a resort in Trancoso, and after the usual chaos of travelling with three children we arrived somewhere close to paradise. No training, but a well deserved night of sleep.",
+        image: "images/Day216.webp",
+        link: "posts/day-216.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 19, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 215: Ideas That Give Energy",
+        description: "The back is better, enough for a leg session but not for golf. Two conversations, one over coffee and one with an ex business associate, left me more energised than any training session could. The knee handled a full day of walking and motorcycle riding without a complaint.",
+        image: "images/Day215.webp",
+        link: "posts/day-215.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 18, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 214: A New Kind of Pain",
+        description: "Tennis ended after fifty minutes when the back pain from yesterday came back much stronger. Forty minutes of massage and stretching on court did not fix it, and neither did anything at home. TENS and heat helped a little, but working through pain is hard, and this is bad timing before a trip.",
+        image: "images/Day214.webp",
+        link: "posts/day-214.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 17, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 213: Back to the Driving Range",
+        description: "A compressed morning of work bought me an afternoon at the driving range, my first golf session after a long break. The ball striking was better than expected, but a pinching pain appeared in the left side of my back. The evening was spent presenting our startup to manufacturing clients, with no drinking and no junk food this time.",
+        image: "images/Day213.webp",
+        link: "posts/day-213.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 16, 2026",
+        pain: "2/10",
+        swelling: "2/10",
+        title: "Day 212: Sore Knees and New Doors",
+        description: "Still sore from yesterday's injections, with the knee feeling noticeably fuller, so the gym session stayed light. A lunch that started as catching up turned into a real prospect, and the school day ended with singing happy birthday to my oldest before the holidays begin.",
+        image: "images/Day212.webp",
+        link: "posts/day-212.html"
+    },
+ {
+        tag: "Week 31",
+        date: "Jun 15, 2026",
+        pain: "3/10",
+        swelling: "2/10",
+        title: "Day 211: Cleared, But Not Ready",
+        description: "Dr Sergio reviewed the MRI and was genuinely happy with the healing, more advanced than expected, and cleared me to return to sport with caution. He also warned me that the next injury is most likely to come in the other knee. The day ended with hyaluronic acid infiltration in both knees, painful and expensive, but probably worth it.",
+        image: "images/Day211.webp",
+        link: "posts/day-211.html"
+    },
+ {
+        tag: "Week 30",
+        date: "Jun 14, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 210: Watching From the Shore",
+        description: "A rough morning after a heavy night, made harder by having to say no to wakeboarding while everyone else went out. Instead I watched Majchrzak win an ATP 250 title, ate paella with my Spanish neighbours, and stayed up far too late for another game.",
+        image: "images/Day210.webp",
+        link: "posts/day-210.html"
+    },
+ {
+        tag: "Week 30",
+        date: "Jun 13, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 209: Ibiuna and a Long Table",
+        description: "A morning leg session in the gym, then the drive to Ibiuna where the illness finally started to lift. Ping pong with the kids, a long walk to the park, and drinks that started far too early. Too much again, but the company made it worth it.",
+        image: "images/Day209.webp",
+        link: "posts/day-209.html"
+    },
+ {
+        tag: "Week 30",
+        date: "Jun 12, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 208: Rain, Chocolate, and Bad Timing",
+        description: "A flat bicycle tyre put me on the motorcycle, and a heavy rain during tennis sent me home soaking wet, which is not ideal for someone still fighting an illness. Work on new projects went well, and Dia dos Namorados quietly ended my diet with a bar of chocolate.",
+        image: "images/Day208.webp",
+        link: "posts/day-208.html"
+    },
+ {
+        tag: "Week 30",
+        date: "Jun 11, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 207: Ceremonies, Ballet, and the World Cup",
+        description: "A day made almost entirely of my kids growing up in front of me. A candle light ceremony in the morning, a ballet presentation in the afternoon, and the start of the World Cup in the evening. Still fighting off this illness, but I got some stretching and core work in anyway.",
+        image: "images/Day207.webp",
+        link: "posts/day-207.html"
+    },
+ {
+        tag: "Week 30",
+        date: "Jun 10, 2026",
+        pain: "1/10",
+        swelling: "1/10",
+        title: "Day 206: Back in the Hospital Again",
+        description: "A day that started with a learning celebration at Kai's school and ended with founders and investors in a room full of ideas. In between there was an MRI for my knee, which put me back in a hospital setting I had almost managed to forget. Not a place I miss, even when the news is good.",
+        image: "images/Day206.webp",
+        link: "posts/day-206.html"
+    },
+ {
         tag: "Week 30",
         date: "Jun 9, 2026",
         pain: "1/10",
